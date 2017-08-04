@@ -1,6 +1,9 @@
 # vanilla website
 
-This is a vanilla derived website from Dataset Comparison.
+This is a vanilla derived website from [Dataset Comparison](https://github.com/zqwei/Neural-Recording-Methodology-Comparison).
+
+## File name rule
+Keep the file in context folder as underscore + link name used in index.html file. 
 
 ## File name rule
 Keep the file in context folder as underscore + link name used in index.html file. 
