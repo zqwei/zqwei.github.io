@@ -5,8 +5,14 @@ This is a vanilla derived website from [Dataset Comparison](https://github.com/z
 ## File name rule
 Keep the file in context folder as underscore + link name used in index.html file. 
 
-## File name rule
-Keep the file in context folder as underscore + link name used in index.html file. 
+## Set up server
+
+Install [node](https://nodejs.org/en/download/) first.
+
+```bash
+  npm install
+  npm start
+```
 
 ## License
 MIT License
