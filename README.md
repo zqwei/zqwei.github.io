@@ -18,7 +18,7 @@ The table of contents of this git repos
 * [ALM data analyses](https://github.com/zqwei/TLDS_ALM_Data): see detail in paper [Wei et al. (2018)](https://www.biorxiv.org/content/early/2018/07/25/376830)
 
 ## Imaging
-* [CMOS camera denoising](https://github.com/zqwei/cmos_denoise): The orginal algorithm follows the model in [Liu et al. (2107)](https://github.com/HuanglabPurdue/NCS)
+* [CMOS camera denoising](https://github.com/zqwei/cmos_denoise): The orginal algorithm follows the model in [Liu et al. (Nat. Methods, 2017)](https://github.com/HuanglabPurdue/NCS)
 * [Denoising using local pca](https://github.com/zqwei/denoiseLocalPCA)
 ### Calcium imaging
 * [Calcium to spike deconvolution algorithms](https://github.com/zqwei/Ca-Imaging-Deconv-List)
