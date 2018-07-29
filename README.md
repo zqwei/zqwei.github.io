@@ -6,7 +6,7 @@ The table of contents of this git repos
 ## Models
 * [Multi-item working memory network](https://github.com/zqwei/Multi-item-Working-Memory-Network): Recurrent neural networks for multi-item working memory and its capacity in a delayed-response task ([Wei et al., J. Neurosci., 2012](https://www.researchgate.net/publication/230678521_From_Distributed_Resources_to_Limited_Slots_in_Multiple-Item_Working_Memory_A_Spiking_Network_Model_with_Normalization))
 * [Integral-and-fire model of mouse V1-layer 4](https://github.com/zqwei/LIF_Vis_model): 
-* [Ramp cell model](https://github.com/zqwei/ramp_cell_model): [Video talk](https://www.youtube.com/watch?v=RQzRmHeNI3g&index=30&list=PL9YzmV9joj3FNsAV2S_cKxY8Ik_-YlQfu)
+* [Ramp cell model](https://github.com/zqwei/ramp_cell_model): [[Video talk]](https://www.youtube.com/watch?v=RQzRmHeNI3g&index=30&list=PL9YzmV9joj3FNsAV2S_cKxY8Ik_-YlQfu)
 
 ## Lectures
 * [Computational neuroscience tutorial](https://github.com/zqwei/Computational_neuroscience_tutorial): Partially as the materials for tutorial lecture in Summer Graduate School on Mathematical Analysis of Behavior (2018, JRC)
