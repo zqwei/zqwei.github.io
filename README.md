@@ -39,6 +39,7 @@ The table of contents of this git repos
 ## Large-scale neural data analysis
 * [Epoch Dependent LDS Fit](https://github.com/zqwei/Epoch-Dependent-LDS-Fit): [Wei et al.](https://www.biorxiv.org/content/early/2018/07/25/376830)
 * [Supervind](https://github.com/dhernandd/supervind): credited to [Daniel Hernandez Diaz](https://github.com/dhernandd)
+* [SLDS](https://github.com/zqwei/pyslds): credited to [Matthew Johnson](https://github.com/mattjj) and [Scott Linderman](https://github.com/slinderman)
 
 # Other
 ## Projects
