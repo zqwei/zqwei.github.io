@@ -4,6 +4,7 @@ The table of contents of this git repos
 # Computational neuroscience
 
 ## Models
+* [Multi-item working memory network](https://github.com/zqwei/Multi-item-Working-Memory-Network) 
 
 ## Lectures
 
@@ -12,6 +13,8 @@ The table of contents of this git repos
 ## Ephys
 
 ## Calcium imaging
+
+## Behavior
 
 ## Large-scale neural data analysis
 
