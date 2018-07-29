@@ -41,7 +41,7 @@ The table of contents of this git repos
 * [Supervind](https://github.com/dhernandd/supervind): credited to [Daniel Hernandez Diaz](https://github.com/dhernandd)
 
 # Other
-## Small projects
+## Projects
 * [Mat to NWB code](https://github.com/zqwei/Mat2NWB_Dataset_Cai-4)
 * [Single cell zebrafish](https://github.com/zqwei/single_cell_zebrafish)
 
@@ -50,10 +50,16 @@ The table of contents of this git repos
 * [Vanilla website](https://github.com/zqwei/vanilla_website): This is a vanilla derived website from [Dataset Comparison](https://github.com/zqwei/Neural-Recording-Methodology-Comparison).
 * [Computer setup](https://github.com/zqwei/computer_setup)
 
-<!---
-* [structuredinference](https://github.com/zqwei/structuredinference)
-* [spykes](https://github.com/zqwei/spykes)
-* [spykesML](https://github.com/zqwei/spykesML)
-* [neuroglancer](https://github.com/zqwei/neuroglancer)
+## Other notes
+* [Single cell genome data hands-on](https://github.com/zqwei/single-cell-workshop-notes)
+* [Teaching workshop](https://github.com/zqwei/Teaching_workshop/blob/master/Teaching_Workshop.md)
 
+# Recommended repos
+* [Structured Inference Networks for Nonlinear State Space Models](https://github.com/clinicalml/structuredinference)
+* [Tools for spike data analysis and visualization](https://github.com/KordingLab/spykes)
+* [A class for using ML algorithms for spike prediction](https://github.com/KordingLab/spykesML)
+* [WebGL-based viewer for volumetric data](https://github.com/zqwei/neuroglancer)
+
+
+<!---
 --->
