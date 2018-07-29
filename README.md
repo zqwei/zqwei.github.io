@@ -10,16 +10,15 @@ The table of contents of this git repos
 
 ## Lectures
 * [Computational neuroscience tutorial](https://github.com/zqwei/Computational_neuroscience_tutorial)
+* [Classical analyses for ephys data](https://github.com/zqwei/explore_ephys_data): Bootcamp material for JHU-JRC Neuroscience program 2017
 
 # Statistical neuroscience
 
 ## Ephys
-* [Classical analyses for ephys data](https://github.com/zqwei/explore_ephys_data)
-* [ALM data analyses](https://github.com/zqwei/TLDS_ALM_Data)
+* [ALM data analyses](https://github.com/zqwei/TLDS_ALM_Data): see detail in paper [Wei et al. (2018)](https://www.biorxiv.org/content/early/2018/07/25/376830)
 
 ## Imaging
 * [CMOS camera denoising](https://github.com/zqwei/cmos_denoise): The orginal algorithm follows the model in [Liu et al. (2107)](https://github.com/HuanglabPurdue/NCS)
-* [Davis' notebook](https://github.com/d-v-b/notebooks): credited to [Davis V Bennett](https://github.com/d-v-b)
 * [Denoising using local pca](https://github.com/zqwei/denoiseLocalPCA)
 ### Calcium imaging
 * [Calcium to spike deconvolution algorithms](https://github.com/zqwei/Ca-Imaging-Deconv-List)
@@ -37,7 +36,7 @@ The table of contents of this git repos
 * [Behavior video classifier](https://github.com/zqwei/BehaviorVideoClassifier)
 
 ## Large-scale neural data analysis
-* [Epoch Dependent LDS Fit](https://github.com/zqwei/Epoch-Dependent-LDS-Fit): [Wei et al.](https://www.biorxiv.org/content/early/2018/07/25/376830)
+* [Epoch Dependent LDS Fit](https://github.com/zqwei/Epoch-Dependent-LDS-Fit): [Wei et al. (2018)](https://www.biorxiv.org/content/early/2018/07/25/376830)
 * [Supervind](https://github.com/dhernandd/supervind): credited to [Daniel Hernandez Diaz](https://github.com/dhernandd)
 * [SLDS](https://github.com/zqwei/pyslds): credited to [Matthew Johnson](https://github.com/mattjj) and [Scott Linderman](https://github.com/slinderman)
 
@@ -60,7 +59,7 @@ The table of contents of this git repos
 * [Tools for spike data analysis and visualization](https://github.com/KordingLab/spykes)
 * [A class for using ML algorithms for spike prediction](https://github.com/KordingLab/spykesML)
 * [WebGL-based viewer for volumetric data](https://github.com/zqwei/neuroglancer)
-
+* [Davis' notebook on zebrafish data analyses](https://github.com/d-v-b/notebooks): credited to [Davis V Bennett](https://github.com/d-v-b)
 
 <!---
 --->
