@@ -9,7 +9,7 @@ The table of contents of this git repos
 * [Ramp cell model](https://github.com/zqwei/ramp_cell_model): [Video talk](https://www.youtube.com/watch?v=RQzRmHeNI3g&index=30&list=PL9YzmV9joj3FNsAV2S_cKxY8Ik_-YlQfu)
 
 ## Lectures
-* [Computational neuroscience tutorial](https://github.com/zqwei/Computational_neuroscience_tutorial)
+* [Computational neuroscience tutorial](https://github.com/zqwei/Computational_neuroscience_tutorial): Partially as the materials for tutorial lecture in Summer Graduate School on Mathematical Analysis of Behavior (2018, JRC)
 * [Classical analyses for ephys data](https://github.com/zqwei/explore_ephys_data): Bootcamp material for JHU-JRC Neuroscience program 2017
 
 # Statistical neuroscience
