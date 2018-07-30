@@ -5,7 +5,7 @@ The table of contents of this git repos
 
 ## Models
 * [Multi-item working memory network](https://github.com/zqwei/Multi-item-Working-Memory-Network): Recurrent neural networks for multi-item working memory and its capacity in a delayed-response task ([Wei et al., J. Neurosci., 2012](https://www.researchgate.net/publication/230678521_From_Distributed_Resources_to_Limited_Slots_in_Multiple-Item_Working_Memory_A_Spiking_Network_Model_with_Normalization))
-* [Integral-and-fire model of mouse V1-layer 4](https://github.com/zqwei/LIF_Vis_model): 
+* [Integral-and-fire model of mouse V1-layer 4](https://github.com/zqwei/LIF_Vis_model): Integral-and-fire version of biophysical model simulation for neurons in Layer IV of Area V1 in mice ([Arkhipov et al., 2018](https://www.biorxiv.org/content/early/2018/03/31/292839))
 * [Ramp cell model](https://github.com/zqwei/ramp_cell_model): [[Video talk]](https://www.youtube.com/watch?v=RQzRmHeNI3g&index=30&list=PL9YzmV9joj3FNsAV2S_cKxY8Ik_-YlQfu)
 
 ## Lectures
@@ -60,6 +60,9 @@ The table of contents of this git repos
 * [A class for using ML algorithms for spike prediction](https://github.com/KordingLab/spykesML)
 * [WebGL-based viewer for volumetric data](https://github.com/zqwei/neuroglancer)
 * [Davis' notebook on zebrafish data analyses](https://github.com/d-v-b/notebooks): credited to [Davis V Bennett](https://github.com/d-v-b)
+
+# Publication list
+https://scholar.google.com/citations?user=S-9jH7oAAAAJ
 
 <!---
 --->
