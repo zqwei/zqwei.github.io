@@ -54,13 +54,6 @@ The table of contents of this git repos
 * [Single cell genome data hands-on](https://github.com/zqwei/single-cell-workshop-notes)
 * [Teaching workshop](https://github.com/zqwei/Teaching_workshop/blob/master/Teaching_Workshop.md)
 
-# Recommended repos
-* [Structured Inference Networks for Nonlinear State Space Models](https://github.com/clinicalml/structuredinference)
-* [Tools for spike data analysis and visualization](https://github.com/KordingLab/spykes)
-* [A class for using ML algorithms for spike prediction](https://github.com/KordingLab/spykesML)
-* [WebGL-based viewer for volumetric data](https://github.com/zqwei/neuroglancer)
-* [Davis' notebook on zebrafish data analyses](https://github.com/d-v-b/notebooks): credited to [Davis V Bennett](https://github.com/d-v-b)
-
 # Publication list
 https://scholar.google.com/citations?user=S-9jH7oAAAAJ
 
