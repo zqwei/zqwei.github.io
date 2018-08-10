@@ -5,6 +5,7 @@
 # Statistical models
 ## Classification
 * [Sparse sensor placement optimization for classification ](https://github.com/bwbrunton/SSPOC_pub)
+* [Neural decoding from Kording Lab](https://github.com/KordingLab/Neural_Decoding)
 ## Dimensionality reduction
 * [seqNMF](https://github.com/FeeLab/seqNMF): [Mackevicius et al., eLife, 2018](https://www.biorxiv.org/content/biorxiv/early/2018/03/02/273128.full.pdf)
 * [Dynamic Mode Decomposition](https://github.com/bwbrunton/dmd-neuro)
