@@ -27,10 +27,13 @@ The table of contents of this git repos
 * [Calcium imaging vs ephys (paper)](https://github.com/zqwei/Ephys_imaging_comparison)
 ### Voltage imaging
 * [Voltron to spike detection](https://github.com/zqwei/spike-detection-voltron)
+### Oscillatory acitivity
+* [Lim J.X.'s project](https://github.com/zqwei/zfish_osc)
 
 ### Projects
 * [Zebrafish spinal cord deveolopment](https://github.com/zqwei/Zebrafish_spinal_cord_development)
 * [Zebrafish data processing](https://github.com/zqwei/fish_processing)
+* [Zebrafish brain oscillation processing](https://github.com/zqwei/zfish_osc)
 
 ## Behavior
 * [Animal behavior analysis](https://github.com/zqwei/Animal_behavior_analysis)
