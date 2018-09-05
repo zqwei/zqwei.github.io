@@ -83,9 +83,9 @@
     var fragmentId = location.hash.substr(1);
     if(fragmentId[0] !== '_'){
         // Set the "content" div innerHTML based on the fragment identifier.
-        getContent(fragmentId, function (content) {
-          $("#content").html(content);
-        });
+        // getContent(fragmentId, function (content) {
+        //   $("#content").html(content);
+        // });
         setActiveLink(fragmentId);
     };
   }
