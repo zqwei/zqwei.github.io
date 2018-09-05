@@ -162,7 +162,6 @@
         .sidebar('attach events', '.toc.item');
     });
   </script>
-
   <script>
   $(document).ready(function() {
       $('.ui.accordion').accordion();
@@ -180,15 +179,11 @@
           });
   });
   </script>
-
   <script language='javascript'>
        $(document).ready(function(){
           $('.ui.accordion').accordion();
        });
   </script>
-
-  <a name="_top"></a>
-
 </head>
 <body>
 
@@ -234,12 +229,26 @@
       </div>
     </div>
   </div>
-  <div w3-include-html="content/_home.html" id="home"></div>
-  <div w3-include-html="content/_publication.html" id="publication"></div>
-  <div w3-include-html="content/_teaching.html" id="teaching"></div>
-  <div w3-include-html="content/_people.html" id="people"></div>
-  <div w3-include-html="content/_media.html" id="media"></div>
-  <div w3-include-html="content/_links.html" id="links"></div>
+  <div class="ui grey inverted vertical masthead center aligned segment">
+    <div class="ui text container">
+     <h1 class="ui inverted header">
+       Ziqiang Wei
+     </h1>
+     <h2>Statistical mind of neuroscience</h2>
+   </div>
+  </div>
+  <div class="ui container">
+    <div class="ui vertical stripe quote segment">
+      <div class="ui container">
+        <div class="ui vertical segment" w3-include-html="content/_home.html" id="home"></div>
+        <div class="ui vertical segment" w3-include-html="content/_publication.html" id="publication"></div>
+        <div class="ui vertical segment" w3-include-html="content/_teaching.html" id="teaching"></div>
+        <!-- <div class="ui vertical segment" w3-include-html="content/_people.html" id="people"></div>
+        <div w3-include-html="content/_media.html" id="media"></div> -->
+        <div class="ui vertical segment" w3-include-html="content/_links.html" id="links"></div>
+      </div>
+    </div>
+  </div>
 
   <div class="ui grey footer inverted vertical segment">
     <div class="ui container">
