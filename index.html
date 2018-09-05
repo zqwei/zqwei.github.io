@@ -7,10 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
   <!-- Site Properties -->
-  <title>Recording technique comparison</title>
+  <title>Wei, Z's portfilio</title>
   <link rel="stylesheet" type="text/css" href="dist/components/reset.css">
   <link rel="stylesheet" type="text/css" href="dist/components/site.css">
-
   <link rel="stylesheet" type="text/css" href="dist/components/container.css">
   <link rel="stylesheet" type="text/css" href="dist/components/grid.css">
   <link rel="stylesheet" type="text/css" href="dist/components/header.css">
@@ -18,7 +17,6 @@
   <link rel="stylesheet" type="text/css" href="dist/components/menu.css">
   <link rel="stylesheet" type="text/css" href="dist/components/form.css">
   <link rel="stylesheet" type="text/css" href="dist/components/accordion.css">
-
   <link rel="stylesheet" type="text/css" href="dist/components/divider.css">
   <link rel="stylesheet" type="text/css" href="dist/components/dropdown.css">
   <link rel="stylesheet" type="text/css" href="dist/components/segment.css">
@@ -47,28 +45,10 @@
     #content {
         flex: 1;
     }
-
     a{
         color: gray;
     }
-
     p{ text-align: justify; font-size: 1.33em;}
-
-    #headerbanner{
-      background-image: url('images/banner.png');
-      /*background-size: cover;
-      background-attachment:fixed;*/
-      background-position: center top;
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-
-    #headerbanner h1 {
-      margin-top: 0em;
-      margin-bottom: 0em;
-      font-size: 4em;
-      font-weight: normal;
-    }
 
     .masthead.segment {
       min-height: 50px;
@@ -152,7 +132,6 @@
 
 
   </style>
-
   <script src="js/jquery.min.js"></script>
   <script src="dist/semantic.js"></script>
   <script src="dist/components/visibility.js"></script>
@@ -162,6 +141,7 @@
   <script src="dist/components/form.js"></script>
   <script src="dist/components/tab.js"></script>
   <script src="dist/components/accordion.js"></script>
+  <script src="http://www.w3schools.com/lib/w3data.js"></script>
   <script>
   $(document)
     .ready(function() {
@@ -214,46 +194,54 @@
 
 
 <!-- Following Menu -->
-<div class="ui orange inverted large top fixed hidden menu" id="navhide">
+<div class="ui grey inverted large top fixed hidden menu" id="navhide">
   <div class="ui container">
-      <a class="active red item" href="#home">Home</a>
-      <a class="yellow item" href="#analyses">Analyses</a>
-      <a class="teal item" href="#data">Datasets</a>
-      <a class="blue item" href="#model">Models</a>
-      <a class="purple item" href="#codes">Code</a>
+    <a class="active item" href="#home">about</a>
+    <a class="item" href="#publication">publication</a>
+    <a class="item" href="#teaching">teaching</a>
+    <!-- <a class="item" href="#people">people</a>
+    <a class="item" href="#media">media</a> -->
+    <a class="item" href="#links">links</a>
     </div>
   </div>
 </div>
 
 <!-- Sidebar Menu -->
-<div class="ui vertical orange inverted sidebar menu" id="navside">
-    <a class="active red item" href="#home">Home</a>
-    <a class="yellow item" href="#analyses">Analyses</a>
-    <a class="teal item" href="#data">Datasets</a>
-    <a class="blue item" href="#model">Models</a>
-    <a class="purple item" href="#codes">Code</a>
+<div class="ui vertical grey inverted sidebar menu" id="navside">
+  <a class="active item" href="#home">about</a>
+  <a class="item" href="#publication">publication</a>
+  <a class="item" href="#teaching">teaching</a>
+  <!-- <a class="item" href="#people">people</a>
+  <a class="item" href="#media">media</a> -->
+  <a class="item" href="#links">links</a>
 </div>
 
 
 <!-- Page Contents -->
 <div class="pusher">
-  <div class="ui orange inverted vertical masthead center aligned segment">
+  <div class="ui grey inverted vertical masthead center aligned segment">
     <div class="ui container">
-      <div class="ui orange borderless large secondary inverted menu" id="navtop">
+      <div class="ui grey borderless large secondary inverted menu" id="navtop">
         <a class="toc item">
           <i class="sidebar icon"></i>
         </a>
-        <a class="active red item" href="#home">Home</a>
-        <a class="yellow item" href="#analyses">Analyses</a>
-        <a class="teal item" href="#data">Datasets</a>
-        <a class="blue item" href="#model">Models</a>
-        <a class="purple item" href="#codes">Code</a>
+        <a class="active item" href="#home">about</a>
+        <a class="item" href="#publication">publication</a>
+        <a class="item" href="#teaching">teaching</a>
+        <!-- <a class="item" href="#people">people</a>
+        <a class="item" href="#media">media</a> -->
+        <a class="item" href="#links">links</a>
       </div>
     </div>
   </div>
-  <div id="content"></div>
+  <div w3-include-html="content/_home.html" id="home"></div>
+  <div w3-include-html="content/_publication.html" id="publication"></div>
+  <div w3-include-html="content/_teaching.html" id="teaching"></div>
+  <div w3-include-html="content/_people.html" id="people"></div>
+  <div w3-include-html="content/_media.html" id="media"></div>
+  <div w3-include-html="content/_links.html" id="links"></div>
 
-  <div class="ui footer inverted vertical segment">
+  <div class="ui grey footer inverted vertical segment">
     <div class="ui container">
       <div class="ui stackable inverted divided equal height stackable grid">
         <div class="five wide column">
@@ -295,7 +283,7 @@
 </div>
 
 <script src="js/navigation.js"></script>
-
+<script>w3IncludeHTML();</script>
 </body>
 
 </html>
