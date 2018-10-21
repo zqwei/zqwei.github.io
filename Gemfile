@@ -11,8 +11,6 @@ source "https://rubygems.org"
 gem "jekyll", "~> 3.8.4"
 
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
-gem "jekyll-theme-semantic"
-gem "jekyll-watch"
 
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
