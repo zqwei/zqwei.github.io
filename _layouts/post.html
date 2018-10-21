@@ -1,0 +1,13 @@
+---
+layout: default
+type: post
+---
+
+<main>
+  {% include post.html post=page %}
+</main>
+{% if page.comments %}
+  <div class="ui basic vertical segment">
+    {% include disqus.html %}
+  </div>
+{% endif %}
