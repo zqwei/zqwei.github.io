@@ -207,11 +207,11 @@
     <script language='javascript'>
          $(document).ready(function(){
             $('.ui.accordion').accordion();
-            // $('.ui.sticky')
-            //   .sticky({
-            //     context: '#example2',
-            //     // pushing: true
-            //   });
+            $('.ui.sticky')
+              .sticky({
+                context: '#example2',
+                // pushing: true
+              });
          });
     </script>
 
@@ -230,25 +230,23 @@
     </div>
 
     <!-- Sidebar Menu -->
-    <div class="ui vertical grey inverted sidebar menu" id="navside">
+    <!-- <div class="ui vertical grey inverted sidebar menu" id="navside">
       <a class="active item" href="#home">about</a>
       <a class="item" href="#publication">publication</a>
       <a class="item" href="#teaching">teaching</a>
       <a class="item" href="#links">links</a>
-    </div>
+    </div> -->
     <!-- Page Contents -->
-    <div class="pusher">
+    <!-- <div class="pusher"> -->
       <div class="ui grey inverted vertical masthead center aligned segment">
         <div class="ui container">
           <div class="ui grey borderless large secondary inverted menu" id="navtop">
-            <a class="toc item">
+            <!-- <a class="toc item">
               <i class="sidebar icon"></i>
-            </a>
+            </a> -->
             <a class="active item" href="#home">about</a>
             <a class="item" href="#publication">publication</a>
             <a class="item" href="#teaching">teaching</a>
-            <!-- <a class="item" href="#people">people</a>
-            <a class="item" href="#media">media</a> -->
             <a class="item" href="#links">links</a>
           </div>
         </div>
@@ -263,41 +261,9 @@
        </div>
       </div>
       <div class="ui basic segment" id="example2">
-        <div class="ui left rail" style="">
-          <!-- <div class="ui sticky top fixed" style="margin-top: 300px; left: 30px;"> -->
-          <div class="ui segment">
-            Left Rail Content
-          </div>
-            <!-- <h3 class="ui red header">News</h3> -->
-            <!-- <div class="ui divider"></div>
-            <h3 class="ui header">Info</h3>
-            <div class="ui list">
-              <div class="item">
-                <a href="https://www.linkedin.com/in/ziqiang-wei-8566a167/">
-                  <i class="large linkedin icon"></i> curriculum vitae
-                </a>
-              </div>
-              <div class="item">
-                <a href="https://scholar.google.com/citations?user=S-9jH7oAAAAJ&hl=en">
-                  <i class="large chart bar icon"></i> google scholar profile
-                </a>
-              </div>
-              <div class="item">
-                <a href="https://github.com/zqwei">
-                  <i class="large github icon"></i> github
-                </a>
-              </div>
-              <div class="item">
-                <a href="#">
-                  <i class="large envelope icon"></i> weiz (at) janelia (dot) hhmi (dot) org
-                </a>
-              </div>
-              <div class="item">
-                <a href="https://twitter.com/zq_wei">
-                  <i class="large twitter icon"></i> @ zq_wei
-                </a>
-              </div> -->
-            <!-- </div> -->
+        <div class="ui right internal rail">
+          <div class="ui sticky" style="width: 272px !important; height: 262.531px !important; left: 1323px; top:50px">
+            {% include sidebar.html%}
           </div>
         </div>
         <div class="ui container">
@@ -335,7 +301,7 @@
           </div>
         </div>
       </div>
-    </div>
+    <!-- </div> -->
 
   </body>
 
