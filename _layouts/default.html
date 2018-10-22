@@ -210,7 +210,7 @@
             $('.ui.sticky')
               .sticky({
                 context: '#example2',
-                // pushing: true
+                pushing: true
               });
          });
     </script>
@@ -260,15 +260,16 @@
          <h2><i>[postdoc, computational and statistical neuroscientist]</i></h2>
        </div>
       </div>
-      <div class="ui basic segment" id="example2">
-        <div class="ui left internal rail">
-          <div class="ui sticky" style="width: 272px; height: 262.531px; left: 1323px; top:50px">  <!-- !important -->
-            {% include sidebar.html%}
+      <div class="ui container">
+        <div class="ui basic segment" id="example2">
+          <div class="ui right attached rail">
+            <!-- internal -->
+            <div class="ui sticky" style="width: 272px !important; height: 262.531px !important; left: 0px; top:50px">
+              {% include sidebar.html%}
+            </div>
           </div>
-        </div>
-        <div class="ui container">
-          <div class="ui vertical stripe quote segment">
-            <div class="ui container">
+          <div class="ui container">
+            <div class="ui vertical stripe quote segment">
               <div class="ui vertical segment" id="home">
                 {% include home.html %}
               </div>
