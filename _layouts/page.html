@@ -3,6 +3,22 @@ layout: default
 type: page
 ---
 
-<main>
-  {{ content }}
-</main>
+<div class="ui grey inverted vertical masthead center aligned segment">
+  <div class="ui container">
+    <div class="ui grey borderless large secondary inverted menu" id="navtop">
+      <a class="active item" href="{{ site.baseurl }}index.html">home</a>
+    </div>
+  </div>
+</div>
+<div class="ui container">
+  <div class="ui basic segment" id="example2">
+    <div class="ui right attached rail">
+      <div class="ui sticky" style="width: 272px !important; height: 262.531px !important; left: 0px; top:50px">
+        {% include sidebar.html%}
+      </div>
+    </div>
+    <main>
+      {{ content }}
+    </main>
+  </div>
+</div>
