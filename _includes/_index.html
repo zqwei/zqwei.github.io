@@ -1,0 +1,18 @@
+---
+layout: default
+title: Home
+type: home
+---
+
+<main>
+  {% for post in paginator.posts %}
+    {% include post.html post=post %}
+  {% endfor %}
+</main>
+{% if paginator.total_pages > 1 %}
+  <div class="ui basic vertical segment">
+    <div class="ui center aligned text container">
+      {% include pagination.html %}
+    </div>
+  </div>
+{% endif %}
