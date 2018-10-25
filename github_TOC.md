@@ -1,7 +1,7 @@
 ---
-layout: post
+layout: page
 title: "Some articles are just so short that we have to make the footer stick"
-categories: misc
+categories:
 ---
 
 # Table of Contents
@@ -66,6 +66,3 @@ The table of contents of this git repos
 
 # Publication list
 https://scholar.google.com/citations?user=S-9jH7oAAAAJ
-
-<!---
---->
