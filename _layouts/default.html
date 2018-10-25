@@ -8,38 +8,38 @@
     <meta name="description" content="{{ site.description }}">
     <meta name="keywords" content="{{ site.keywords }}">
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" type="text/css" href="dist/semantic.min.css">
-    <link rel="stylesheet" type="text/css" href="dist/components/site.css">
-    <link rel="stylesheet" type="text/css" href="dist/components/container.css">
-    <link rel="stylesheet" type="text/css" href="dist/components/grid.css">
-    <link rel="stylesheet" type="text/css" href="dist/components/header.css">
-    <link rel="stylesheet" type="text/css" href="dist/components/image.css">
-    <link rel="stylesheet" type="text/css" href="dist/components/menu.css">
-    <link rel="stylesheet" type="text/css" href="dist/components/form.css">
-    <link rel="stylesheet" type="text/css" href="dist/components/accordion.css">
-    <link rel="stylesheet" type="text/css" href="dist/components/divider.css">
-    <link rel="stylesheet" type="text/css" href="dist/components/dropdown.css">
-    <link rel="stylesheet" type="text/css" href="dist/components/segment.css">
-    <link rel="stylesheet" type="text/css" href="dist/components/button.css">
-    <link rel="stylesheet" type="text/css" href="dist/components/list.css">
-    <link rel="stylesheet" type="text/css" href="dist/components/label.css">
-    <link rel="stylesheet" type="text/css" href="dist/components/icon.css">
-    <link rel="stylesheet" type="text/css" href="dist/components/sidebar.css">
-    <link rel="stylesheet" type="text/css" href="dist/components/sticky.css">
-    <link rel="stylesheet" type="text/css" href="dist/components/rail.css">
-    <link rel="stylesheet" type="text/css" href="dist/components/transition.css">
-    <link rel="stylesheet" type="text/css" href="dist/components/tab.css">
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}dist/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}dist/components/site.css">
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}dist/components/container.css">
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}dist/components/grid.css">
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}dist/components/header.css">
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}dist/components/image.css">
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}dist/components/menu.css">
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}dist/components/form.css">
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}dist/components/accordion.css">
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}dist/components/divider.css">
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}dist/components/dropdown.css">
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}dist/components/segment.css">
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}dist/components/button.css">
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}dist/components/list.css">
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}dist/components/label.css">
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}dist/components/icon.css">
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}dist/components/sidebar.css">
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}dist/components/sticky.css">
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}dist/components/rail.css">
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}dist/components/transition.css">
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}dist/components/tab.css">
 
 
-    <script src="js/jquery.min.js"></script>
-    <script src="dist/semantic.js"></script>
-    <script src="dist/components/visibility.js"></script>
-    <script src="dist/components/sidebar.js"></script>
-    <script src="dist/components/transition.js"></script>
-    <script src="dist/components/sticky.js"></script>
-    <script src="dist/components/form.js"></script>
-    <script src="dist/components/tab.js"></script>
-    <script src="dist/components/accordion.js"></script>
+    <script src="{{ site.baseurl }}js/jquery.min.js"></script>
+    <script src="{{ site.baseurl }}dist/semantic.js"></script>
+    <script src="{{ site.baseurl }}dist/components/visibility.js"></script>
+    <script src="{{ site.baseurl }}dist/components/sidebar.js"></script>
+    <script src="{{ site.baseurl }}dist/components/transition.js"></script>
+    <script src="{{ site.baseurl }}dist/components/sticky.js"></script>
+    <script src="{{ site.baseurl }}dist/components/form.js"></script>
+    <script src="{{ site.baseurl }}dist/components/tab.js"></script>
+    <script src="{{ site.baseurl }}dist/components/accordion.js"></script>
 
     <script>
       $(document)
@@ -158,15 +158,15 @@
     }
     </style>
 
-    <script src="js/jquery.min.js"></script>
-    <script src="dist/semantic.js"></script>
-    <script src="dist/components/visibility.js"></script>
-    <script src="dist/components/sidebar.js"></script>
-    <script src="dist/components/transition.js"></script>
-    <script src="dist/components/sticky.js"></script>
-    <script src="dist/components/form.js"></script>
-    <script src="dist/components/tab.js"></script>
-    <script src="dist/components/accordion.js"></script>
+    <script src="{{ site.baseurl }}js/jquery.min.js"></script>
+    <script src="{{ site.baseurl }}dist/semantic.js"></script>
+    <script src="{{ site.baseurl }}dist/components/visibility.js"></script>
+    <script src="{{ site.baseurl }}dist/components/sidebar.js"></script>
+    <script src="{{ site.baseurl }}dist/components/transition.js"></script>
+    <script src="{{ site.baseurl }}dist/components/sticky.js"></script>
+    <script src="{{ site.baseurl }}dist/components/form.js"></script>
+    <script src="{{ site.baseurl }}dist/components/tab.js"></script>
+    <script src="{{ site.baseurl }}dist/components/accordion.js"></script>
     <script>
     $(document)
       .ready(function() {
@@ -218,90 +218,23 @@
   </head>
 
   <body>
-    <!-- Following Menu -->
-    <div class="ui grey inverted large top fixed hidden menu" id="navhide">
+    {{ content }}
+    <div class="ui grey footer inverted vertical segment">
       <div class="ui container">
-        <a class="active item" href="#home">about</a>
-        <a class="item" href="#publication">publication</a>
-        <a class="item" href="#teaching">teaching</a>
-        <a class="item" href="#links">links</a>
+        <div class="ui stackable inverted divided equal height stackable grid">
+          <div class="eight wide column">
+              MIT License Copyright (c) 2017 Ziqiang Wei
+              <br>
+              Front-end powered by [ <a href="https://semantic-ui.com/" style="color:white">Jekyll-Semantic</a> ]
+          </div>
+          <div class="eight wide column">
+            This website is designed by Ziqiang Wei.
+            <br>
+            Source code is provided at [ <a href="https://github.com/zqwei/zqwei.github.io" style="color:white">git repo</a> ].
+          </div>
+        </div>
       </div>
     </div>
-
-    <!-- Sidebar Menu -->
-    <!-- <div class="ui vertical grey inverted sidebar menu" id="navside">
-      <a class="active item" href="#home">about</a>
-      <a class="item" href="#publication">publication</a>
-      <a class="item" href="#teaching">teaching</a>
-      <a class="item" href="#links">links</a>
-    </div> -->
-    <!-- Page Contents -->
-    <!-- <div class="pusher"> -->
-      <div class="ui grey inverted vertical masthead center aligned segment">
-        <div class="ui container">
-          <div class="ui grey borderless large secondary inverted menu" id="navtop">
-            <!-- <a class="toc item">
-              <i class="sidebar icon"></i>
-            </a> -->
-            <a class="active item" href="#home">about</a>
-            <a class="item" href="#publication">publication</a>
-            <a class="item" href="#teaching">teaching</a>
-            <a class="item" href="#links">links</a>
-          </div>
-        </div>
-      </div>
-      <div class="ui grey inverted vertical masthead center aligned segment">
-        <div class="ui text container">
-         <h1 class="ui inverted header">
-           Ziqiang Wei
-         </h1>
-         <h2>Statistical minds of neuroscience</h2>
-         <h2><i>[postdoc, computational and statistical neuroscientist]</i></h2>
-       </div>
-      </div>
-      <div class="ui container">
-        <div class="ui basic segment" id="example2">
-          <div class="ui right attached rail">
-            <div class="ui sticky" style="width: 272px !important; height: 262.531px !important; left: 0px; top:70px">
-              {% include sidebar.html%}
-            </div>
-          </div>
-          <div class="ui container">
-            <div class="ui vertical stripe quote segment">
-              <div class="ui vertical segment" id="home">
-                {% include home.html %}
-              </div>
-              <div class="ui vertical segment" id="publication">
-                {% include publication.html %}
-              </div>
-              <div class="ui vertical segment" id="teaching">
-                {% include teaching.html %}
-              </div>
-              <div class="ui vertical segment" id="links">
-                {% include links.html %}
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="ui grey footer inverted vertical segment">
-        <div class="ui container">
-          <div class="ui stackable inverted divided equal height stackable grid">
-            <div class="eight wide column">
-                MIT License Copyright (c) 2017 Ziqiang Wei
-                <br>
-                Front-end powered by [ <a href="https://semantic-ui.com/" style="color:white">Jekyll-Semantic</a> ]
-            </div>
-            <div class="eight wide column">
-              This website is designed by Ziqiang Wei.
-              <br>
-              Source code is provided at [ <a href="https://github.com/zqwei/zqwei.github.io" style="color:white">git repo</a> ].
-            </div>
-          </div>
-        </div>
-      </div>
-    <!-- </div> -->
-
   </body>
 
 
