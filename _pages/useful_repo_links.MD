@@ -1,7 +1,7 @@
 ---
+permalink: /useful_repo_links.html
 layout: page
 title: "Interesting github repos"
-categories: misc
 ---
 
 # Computer vision
