@@ -1,6 +1,6 @@
-# vanilla website
+# Personal website
 
-This is a vanilla derived website using semantic-ui and jekyll.
+This is my personal website using semantic-ui and jekyll.
 
 
 ## License
