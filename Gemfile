@@ -10,6 +10,7 @@ source "https://rubygems.org"
 # Happy Jekylling!
 gem 'github-pages'
 gem "nokogiri", ">= 1.10.4"
+gem "kramdown", ">= 2.3.0"
 # gem "jekyll", "~> 3.8.4"
 
 
