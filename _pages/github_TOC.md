@@ -1,7 +1,7 @@
 ---
 permalink: /github_TOC.html
 layout: page
-title: "Some articles are just so short that we have to make the footer stick"
+title: "github_TOC"
 ---
 
 # Table of Contents
