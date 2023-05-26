@@ -69,9 +69,6 @@
       flex: 1;
     }
 
-    #content {
-        flex: 1;
-    }
     a{
         color: gray;
     }
@@ -106,7 +103,9 @@
     }
 
     .ui.vertical.stripe {
-      padding: 8em 0em;
+      display: flex;
+      min-height: 85vh;
+      flex-direction: column;
     }
     .ui.vertical.stripe h3 {
       font-size: 1.33em;
@@ -127,18 +126,13 @@
       padding: 0em;
     }
     .quote.stripe.segment .grid .column {
-      padding-top: 1em;
+      padding-top: 0em;
       padding-bottom: 0em;
     }
 
     .footer.segment {
-        padding: 5em 5em;
+        padding: 1em 1em;
     }
-    /* .ui.footer{
-      position: absolute;
-      width: 100%;
-      bottom: 0;
-    } */
 
     .secondary.menu .toc.item {
       display: none;
