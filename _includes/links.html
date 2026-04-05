@@ -11,7 +11,7 @@
           {% for item in category.items %}
           <div class="item">
             {% if item.title and item.url %}
-            <a href="{% if item.url contains '://' or item.url contains '#' %}{{ item.url }}{% else %}{{ site.baseurl }}{{ item.url | remove_first: '/' }}{% endif %}">
+            <a href="{% if item.url contains '://' %}{{ item.url }}{% else %}{{ site.baseurl }}{{ item.url | remove_first: '/' }}{% endif %}">
               {{ item.title }}
             </a>{% if item.description %}: {{ item.description }}{% endif %}
             {% elsif item.description %}

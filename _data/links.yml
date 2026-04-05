@@ -3,9 +3,8 @@ categories:
     items:
       - title: Chinese Systems and Computational Neural group
         url: https://docs.google.com/forms/d/e/1FAIpQLSdZgaihYBtmGozmLf7IuwEZJTFtqHV1jV23qq0iJBk0OZutzQ/viewform?usp=sf_link
-      - title: Ephys-ophys
+      - title: Ephys-ophys: http://im-phys.org/
         url: http://im-phys.org/
-        description: Electrophysiology and optical physiology comparison resource
   - title: Git Repos
     items:
       - title: Git TOC
