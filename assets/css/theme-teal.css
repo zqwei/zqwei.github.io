@@ -1,0 +1,248 @@
+/* ── Theme: Teal / Modern Lab ─────────────────────────────────────────────────
+   Pure-white background, light cream hero (no dark header), teal accent,
+   single-column layout (sidebar hidden), ALL-CAPS section labels.
+   Inspired by Flatiron / Allen Institute lab pages.
+   Switch to this theme: set  site_theme: teal  in _config.yml
+   ────────────────────────────────────────────────────────────────────────── */
+
+:root {
+  --site-bg: #ffffff;
+  --site-surface: #ffffff;
+  --site-text: #2a2a2a;
+  --site-muted: #6b7280;
+  --site-dark: #f7f5f2;
+  --site-dark-2: #0e7c7b;
+  --site-border: #e4e4e4;
+  --site-accent: #0e7c7b;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--site-bg);
+  color: var(--site-text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+a {
+  color: var(--site-accent);
+}
+
+p {
+  text-align: justify;
+  line-height: 1.8;
+  font-size: 1.05rem;
+}
+
+/* ── Layout shell ── */
+
+.site-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Fixed navbar — white with thin bottom border ── */
+
+#nav-fixed {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  background-color: #ffffff !important;
+  border-bottom: 1px solid var(--site-border);
+}
+
+#nav-fixed.nav-visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#nav-fixed .navbar-brand,
+#nav-fixed .nav-link {
+  color: var(--site-text) !important;
+}
+
+#nav-fixed .nav-link:hover,
+#nav-fixed .nav-link:focus {
+  color: var(--site-accent) !important;
+}
+
+/* ── Hero / masthead — light cream, teal bottom rule ── */
+
+.hero-section {
+  background: var(--site-dark);
+  border-bottom: 2px solid var(--site-accent);
+  color: var(--site-text);
+  padding: 4.5rem 0 3.5rem;
+}
+
+.hero-section .display-3 {
+  font-size: clamp(2.5rem, 6vw, 4.25rem);
+  color: var(--site-text);
+}
+
+.hero-role {
+  font-size: 1.2rem;
+  opacity: 0.75;
+  margin-bottom: 0.25rem;
+  color: var(--site-text);
+}
+
+/* Dark nav links in light hero */
+.hero-section .nav-link,
+.hero-section .nav-link:hover,
+.hero-section .nav-link:focus {
+  color: var(--site-text);
+}
+
+.hero-section .nav-link:hover,
+.hero-section .nav-link:focus {
+  color: var(--site-accent);
+}
+
+/* Override Bootstrap navbar-dark toggle icon for light background */
+.hero-section .navbar-toggler {
+  border-color: rgba(0, 0, 0, 0.25);
+}
+
+.hero-section .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280%2C 0%2C 0%2C 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* ── Content sections ── */
+
+.content-section {
+  scroll-margin-top: 5rem;
+  margin-bottom: 3rem;
+}
+
+/* ── Single-column: hide sidebar, body takes full width ── */
+
+.section-sidebar {
+  display: none !important;
+}
+
+.section-body-col {
+  border-left: none !important;
+}
+
+@media (min-width: 992px) {
+  .section-body-col {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+/* ── ALL-CAPS small-label section titles ── */
+
+.section-title {
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--site-muted);
+  margin-bottom: 1.25rem;
+}
+
+/* ── Research panel cards — hover shadow, flat by default ── */
+
+.research-panel {
+  background: var(--site-surface);
+  border-radius: 0.5rem;
+  border: 1px solid var(--site-border);
+  box-shadow: none;
+  transition: box-shadow 0.2s ease;
+}
+
+.research-panel:hover {
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+.research-panel .card-body {
+  padding: 1.5rem;
+}
+
+.research-image {
+  width: 100%;
+  max-height: 220px;
+  object-fit: contain;
+  background: #ffffff;
+  border: 1px solid var(--site-border);
+  border-radius: 0.25rem;
+  padding: 1rem;
+}
+
+/* ── News list ── */
+
+.news-item {
+  padding: 0 0 0.75rem;
+  margin-bottom: 0.75rem;
+  border-color: var(--site-border) !important;
+}
+
+.news-item:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none !important;
+}
+
+/* ── Resource / badge links — teal fill on hover ── */
+
+.resource-link {
+  color: var(--site-accent);
+  border: 1px solid var(--site-accent);
+  border-radius: 0.25rem;
+  padding: 0.05rem 0.35rem;
+  font-size: 0.85em;
+  text-decoration: none;
+  white-space: nowrap;
+  margin-left: 0.25rem;
+}
+
+.resource-link:hover,
+.resource-link:focus {
+  background: var(--site-accent);
+  color: #ffffff;
+}
+
+/* ── Footer — light gray ── */
+
+.site-footer {
+  background: #f0f0f0;
+  color: var(--site-text);
+  border-top: 1px solid var(--site-border);
+  margin-top: auto;
+  font-size: 0.95rem;
+}
+
+.footer-link {
+  color: var(--site-text);
+  text-decoration: none;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--site-accent);
+}
+
+/* ── Pagination ── */
+
+.pagination .page-link {
+  color: var(--site-accent);
+}
+
+.pagination .page-item.active .page-link {
+  background-color: var(--site-accent);
+  border-color: var(--site-accent);
+}
+
+/* ── Responsive tweaks ── */
+
+@media (max-width: 991.98px) {
+  .hero-section {
+    padding: 3.5rem 0 2.75rem;
+  }
+}

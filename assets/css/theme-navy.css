@@ -1,0 +1,219 @@
+/* ── Theme: Navy / Serif ──────────────────────────────────────────────────────
+   Deep navy hero, muted-gold accent, Georgia serif headings, accent-stripe
+   research cards. Classic academic faculty-page feel.
+   Switch to this theme: set  site_theme: navy  in _config.yml
+   ────────────────────────────────────────────────────────────────────────── */
+
+:root {
+  --site-bg: #fafafa;
+  --site-surface: #ffffff;
+  --site-text: #2f3438;
+  --site-muted: #6b7280;
+  --site-dark: #0d1b2a;
+  --site-dark-2: #1b3a5c;
+  --site-border: #d9dde3;
+  --site-accent: #c9a84c;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--site-bg);
+  color: var(--site-text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+a {
+  color: var(--site-dark-2);
+}
+
+p {
+  text-align: justify;
+  line-height: 1.7;
+  font-size: 1.1rem;
+}
+
+/* Serif headings throughout */
+h1, h2, h3, h4, h5, h6 {
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+/* ── Layout shell ── */
+
+.site-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Fixed navbar (hidden until hero scrolls away) ── */
+
+#nav-fixed {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+#nav-fixed.nav-visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* ── Hero / masthead ── */
+
+.hero-section,
+.site-footer {
+  background: linear-gradient(180deg, var(--site-dark) 0%, #050e17 100%);
+  color: #fff;
+}
+
+.hero-section {
+  padding: 4.5rem 0 3.5rem;
+}
+
+.hero-section .display-3 {
+  font-size: clamp(2.5rem, 6vw, 4.25rem);
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+}
+
+.hero-role {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  margin-bottom: 0.25rem;
+}
+
+/* Navbar links inside hero */
+.hero-section .nav-link,
+.hero-section .nav-link:hover,
+.hero-section .nav-link:focus {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.hero-section .nav-link:hover,
+.hero-section .nav-link:focus {
+  color: var(--site-accent);
+}
+
+/* ── Content sections ── */
+
+.content-section {
+  scroll-margin-top: 5rem;
+  margin-bottom: 3rem;
+}
+
+.section-sidebar {
+  margin-bottom: 1rem;
+}
+
+.section-title {
+  font-size: clamp(1.75rem, 4vw, 2.25rem);
+  font-weight: 400;
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+  font-variant: small-caps;
+  margin-bottom: 0.5rem;
+}
+
+/* Vertical separator for sidebar/body layout (desktop only) */
+@media (min-width: 992px) {
+  .section-body-col {
+    border-left: 1px solid var(--site-border);
+  }
+}
+
+/* ── Research panel cards — accent-stripe style ── */
+
+.research-panel {
+  background: var(--site-surface);
+  border-radius: 0;
+  border: none;
+  border-left: 3px solid var(--site-accent);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+}
+
+.research-panel .card-body {
+  padding: 1.5rem;
+}
+
+.research-image {
+  width: 100%;
+  max-height: 220px;
+  object-fit: contain;
+  background: #ffffff;
+  border: 1px solid var(--site-border);
+  border-radius: 0;
+  padding: 1rem;
+}
+
+/* ── News list ── */
+
+.news-item {
+  padding: 0 0 0.75rem;
+  margin-bottom: 0.75rem;
+  border-color: var(--site-border) !important;
+}
+
+.news-item:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none !important;
+}
+
+/* ── Resource / badge links ── */
+
+.resource-link {
+  color: var(--site-text);
+  border: 1px solid var(--site-border);
+  border-radius: 0.25rem;
+  padding: 0.05rem 0.35rem;
+  font-size: 0.85em;
+  text-decoration: none;
+  white-space: nowrap;
+  margin-left: 0.25rem;
+}
+
+.resource-link:hover,
+.resource-link:focus {
+  color: var(--site-accent);
+  border-color: var(--site-accent);
+}
+
+/* ── Footer ── */
+
+.site-footer {
+  margin-top: auto;
+  font-size: 0.95rem;
+}
+
+.footer-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--site-accent);
+}
+
+/* ── Pagination ── */
+
+.pagination .page-link {
+  color: var(--site-dark-2);
+}
+
+.pagination .page-item.active .page-link {
+  background-color: var(--site-dark-2);
+  border-color: var(--site-dark-2);
+}
+
+/* ── Responsive tweaks ── */
+
+@media (max-width: 991.98px) {
+  .hero-section {
+    padding: 3.5rem 0 2.75rem;
+  }
+}

@@ -1,4 +1,6 @@
 title: Wei, Z's portfolio
+# Theme: default | navy | teal | dark | burgundy
+site_theme: default
 email: weiz@janelia.hhmi.org
 description: Ziqiang Wei's website
 baseurl: ""

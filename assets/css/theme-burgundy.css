@@ -1,0 +1,242 @@
+/* ── Theme: Burgundy / Warm Serif ────────────────────────────────────────────
+   Warm off-white background, light hero with a burgundy rule, Georgia serif
+   headings, accent-stripe research cards, tan footer.
+   Elegant academic aesthetic — UCSF / Princeton feel.
+   Switch to this theme: set  site_theme: burgundy  in _config.yml
+   ────────────────────────────────────────────────────────────────────────── */
+
+:root {
+  --site-bg: #fdf6ec;
+  --site-surface: #fffdf7;
+  --site-text: #3a3a3a;
+  --site-muted: #8a7a6a;
+  --site-dark: #fdf6ec;
+  --site-dark-2: #8b1a1a;
+  --site-border: #e8dfc8;
+  --site-accent: #8b1a1a;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--site-bg);
+  color: var(--site-text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+a {
+  color: var(--site-dark-2);
+}
+
+p {
+  text-align: justify;
+  line-height: 1.75;
+  font-size: 1.1rem;
+}
+
+/* Serif headings throughout */
+h1, h2, h3, h4, h5, h6 {
+  font-family: Georgia, "Palatino Linotype", Palatino, serif;
+}
+
+/* ── Layout shell ── */
+
+.site-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Fixed navbar — warm off-white ── */
+
+#nav-fixed {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  background-color: #f5ede0 !important;
+  border-bottom: 1px solid var(--site-border);
+}
+
+#nav-fixed.nav-visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#nav-fixed .navbar-brand,
+#nav-fixed .nav-link {
+  color: var(--site-text) !important;
+}
+
+#nav-fixed .nav-link:hover,
+#nav-fixed .nav-link:focus {
+  color: var(--site-accent) !important;
+}
+
+/* ── Hero / masthead — warm light with burgundy rule ── */
+
+.hero-section {
+  background: var(--site-dark);
+  border-bottom: 2px solid var(--site-accent);
+  color: var(--site-text);
+  padding: 4.5rem 0 3.5rem;
+}
+
+.hero-section .display-3 {
+  font-size: clamp(2.5rem, 6vw, 4.25rem);
+  font-family: Georgia, "Palatino Linotype", serif;
+  color: var(--site-text);
+}
+
+.hero-role {
+  font-size: 1.2rem;
+  margin-bottom: 0.25rem;
+  color: var(--site-muted);
+}
+
+/* Dark nav links in light hero */
+.hero-section .nav-link,
+.hero-section .nav-link:hover,
+.hero-section .nav-link:focus {
+  color: var(--site-text);
+}
+
+.hero-section .nav-link:hover,
+.hero-section .nav-link:focus {
+  color: var(--site-accent);
+}
+
+/* Override Bootstrap navbar-dark toggle icon for light background */
+.hero-section .navbar-toggler {
+  border-color: rgba(0, 0, 0, 0.25);
+}
+
+.hero-section .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280%2C 0%2C 0%2C 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* ── Content sections ── */
+
+.content-section {
+  scroll-margin-top: 5rem;
+  margin-bottom: 3rem;
+}
+
+.section-sidebar {
+  margin-bottom: 1rem;
+}
+
+/* Elegant serif section titles with thin rule below */
+.section-title {
+  font-size: clamp(1.75rem, 4vw, 2.25rem);
+  font-weight: 400;
+  font-family: Georgia, "Palatino Linotype", serif;
+  color: var(--site-accent);
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--site-accent);
+  margin-bottom: 0.75rem;
+}
+
+@media (min-width: 992px) {
+  .section-body-col {
+    border-left: 1px solid var(--site-border);
+  }
+}
+
+/* ── Research panel cards — burgundy accent-stripe ── */
+
+.research-panel {
+  background: var(--site-surface);
+  border-radius: 0;
+  border: none;
+  border-left: 3px solid var(--site-accent);
+  box-shadow: 0 1px 4px rgba(139, 26, 26, 0.06);
+}
+
+.research-panel .card-body {
+  padding: 1.5rem;
+}
+
+.research-image {
+  width: 100%;
+  max-height: 220px;
+  object-fit: contain;
+  background: #fffdf7;
+  border: 1px solid var(--site-border);
+  border-radius: 0;
+  padding: 1rem;
+}
+
+/* ── News list ── */
+
+.news-item {
+  padding: 0 0 0.75rem;
+  margin-bottom: 0.75rem;
+  border-color: var(--site-border) !important;
+}
+
+.news-item:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none !important;
+}
+
+/* ── Resource / badge links ── */
+
+.resource-link {
+  color: var(--site-accent);
+  border: 1px solid var(--site-border);
+  border-radius: 0.25rem;
+  padding: 0.05rem 0.35rem;
+  font-size: 0.85em;
+  text-decoration: none;
+  white-space: nowrap;
+  margin-left: 0.25rem;
+}
+
+.resource-link:hover,
+.resource-link:focus {
+  color: var(--site-accent);
+  border-color: var(--site-accent);
+}
+
+/* ── Footer — warm tan ── */
+
+.site-footer {
+  background: #e8dfc8;
+  color: var(--site-text);
+  border-top: 1px solid var(--site-border);
+  margin-top: auto;
+  font-size: 0.95rem;
+}
+
+.footer-link {
+  color: var(--site-text);
+  text-decoration: none;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--site-accent);
+}
+
+/* ── Pagination ── */
+
+.pagination .page-link {
+  color: var(--site-accent);
+}
+
+.pagination .page-item.active .page-link {
+  background-color: var(--site-accent);
+  border-color: var(--site-accent);
+}
+
+/* ── Responsive tweaks ── */
+
+@media (max-width: 991.98px) {
+  .hero-section {
+    padding: 3.5rem 0 2.75rem;
+  }
+}
