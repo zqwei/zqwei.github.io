@@ -26,11 +26,11 @@ markdown: kramdown
 theme: minima
 plugins:
   - jekyll-seo-tag
+  - jekyll-sitemap
 
 permalink: 'pretty'
 include: ['_pages', '.htaccess']
-exclude: ['Gemfile', 'Gemfile.lock', 'node_modules', 'package.json', 'Gruntfile.js', 'README.md']
-gems: ['jekyll-sitemap']
+exclude: ['Gemfile', 'Gemfile.lock', 'node_modules', 'package.json', 'Gruntfile.js', 'README.md', 'vendor', '.bundle']
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

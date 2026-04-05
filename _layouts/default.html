@@ -223,24 +223,25 @@
   </head>
 
   <body>
+    {% assign profile = site.data.profile %}
     {{ content }}
     <div class="ui grey footer inverted vertical segment">
       <div class="ui container">
         <div class="ui stackable inverted divided equal height stackable grid">
           <div class="eight wide column">
-            <a class="footer" href="https://scholar.google.com/citations?user=5XIozvEAAAAJ&hl">
+            <a class="footer" href="{{ profile.scholar_url }}">
               <i class="large chart bar icon"></i> google scholar profile
             </a>
             <br>
-            <a class="footer" href="https://github.com/zqwei">
+            <a class="footer" href="{{ profile.github_url }}">
               <i class="large github icon"></i> github
             </a>
             <br>
-            <a class="footer" href="#">
-              <i class="large envelope icon"></i> weiz (at) janelia (dot) hhmi (dot) org
+            <a class="footer" href="{{ profile.email_url }}">
+              <i class="large envelope icon"></i> {{ profile.email_text }}
             </a>
             <br>
-            <a class="footer" href="https://twitter.com/zq_wei">
+            <a class="footer" href="{{ profile.twitter_url }}">
               <i class="large twitter icon"></i> @ zq_wei
             </a>
             <br>

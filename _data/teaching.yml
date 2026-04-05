@@ -1,0 +1,36 @@
+categories:
+  - title: Statistical neuroscience
+    items:
+      - date: July 13-31, 2020
+        title: Neuromatch Academy (NMA) Summer School
+        role: Lead TA
+        resources:
+          - label: git repo
+            icon: github
+            url: https://github.com/NeuromatchAcademy/course-content
+      - date: August 27-28, 2019
+        title: JHU Neuroscience bootcamp
+        resources:
+          - label: git repo
+            icon: github
+            url: https://github.com/zqwei/explore-imaging-data
+      - date: August 4-6, 2018
+        title: JHU Neuroscience bootcamp
+        resources:
+          - label: git repo
+            icon: github
+            url: https://github.com/zqwei/explore-imaging-data
+      - date: August 4-6, 2017
+        title: JHU Neuroscience bootcamp
+        resources:
+          - label: git repo
+            icon: github
+            url: https://github.com/zqwei/explore_ephys_data
+  - title: Computational neuroscience
+    items:
+      - date: June 17 - 30, 2018
+        title: Summer Graduate School on Mathematical Analysis of Behavior (Janelia Research Campus)
+        resources:
+          - label: git repo
+            icon: github
+            url: https://github.com/zqwei/Computational_neuroscience_tutorial
