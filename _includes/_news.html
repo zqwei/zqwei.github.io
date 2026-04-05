@@ -1,7 +1,7 @@
 {% assign news_items = site.data.news.items | sort: 'date' | reverse %}
-<div class="ui bulleted list">
+<ul class="list-unstyled news-list">
   {% for item in news_items limit: include.limit %}
-  <div class="item">
+  <li class="news-item border-bottom">
     [{{ item.date | date: "%Y/%m/%d" }}]
     {% if item.url %}
     <a href="{{ item.url }}">{{ item.title }}</a>
@@ -11,10 +11,10 @@
     {% if item.links %}
       {% for link in item.links %}
       <a class="resource-link" href="{{ link.url }}">
-        {% if link.icon %}{% include icon.html name=link.icon classes='large' %}{% else %}[{{ link.label }}]{% endif %}
+        {% if link.icon %}{% include icon.html name=link.icon %}{% else %}[{{ link.label }}]{% endif %}
       </a>
       {% endfor %}
     {% endif %}
-  </div>
+  </li>
   {% endfor %}
-</div>
+</ul>

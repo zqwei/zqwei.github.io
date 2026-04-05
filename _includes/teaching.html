@@ -1,28 +1,26 @@
-<div class="ui internally celled stackable grid">
-  <div class="four wide column">
-    <h2 class="ui header">Teaching</h2>
+<div class="row g-0">
+  <div class="col-12 col-lg-3 section-sidebar">
+    <h2 class="section-title">Teaching</h2>
   </div>
-  <div class="twelve wide column">
-    <div class="ui relaxed divided list">
-      {% for category in site.data.teaching.categories %}
-      <div class="item">
-        <h3 class="ui black header">{{ category.title }}</h3>
-        <div class="ui bulleted list">
-          {% for item in category.items %}
-          <div class="item">
-            {{ item.date }}: {{ item.title }}{% if item.role %}, {{ item.role }}{% endif %}
-            {% if item.resources %}
-              {% for resource in item.resources %}
-              <a class="resource-link" href="{{ resource.url }}">
-                {% include icon.html name=resource.icon %} {{ resource.label }}
-              </a>
-              {% endfor %}
-            {% endif %}
-          </div>
-          {% endfor %}
-        </div>
-      </div>
-      {% endfor %}
+  <div class="col-12 col-lg-9 section-body-col ps-lg-4">
+    {% for category in site.data.teaching.categories %}
+    <div class="mb-4">
+      <h3>{{ category.title }}</h3>
+      <ul class="list-unstyled">
+        {% for item in category.items %}
+        <li class="mb-2">
+          &#8226; {{ item.date }}: {{ item.title }}{% if item.role %}, {{ item.role }}{% endif %}
+          {% if item.resources %}
+            {% for resource in item.resources %}
+            <a class="resource-link" href="{{ resource.url }}">
+              {% include icon.html name=resource.icon %} {{ resource.label }}
+            </a>
+            {% endfor %}
+          {% endif %}
+        </li>
+        {% endfor %}
+      </ul>
     </div>
+    {% endfor %}
   </div>
 </div>
