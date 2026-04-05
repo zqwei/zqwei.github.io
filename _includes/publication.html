@@ -1,52 +1,43 @@
 {% assign profile = site.data.profile %}
-<section class="content-section" id="publication">
-  <div class="row g-4">
-    <div class="col-lg-3">
-      <div class="section-sidebar">
-        <h2 class="section-title mb-3">Publications</h2>
-        <p class="section-subtitle">Within each category, entries should stay ordered from newest to oldest.</p>
-        <a href="{{ profile.scholar_url }}" class="btn btn-outline-secondary btn-sm">
-          {% include icon.html name='bar-chart' classes='me-1' %}Google Scholar profile
-        </a>
-      </div>
-    </div>
-    <div class="col-lg-9">
+<div class="ui internally celled stackable grid">
+  <div class="four wide column">
+    <h2 class="ui header">Publications</h2>
+    <h3 class="ui header">
+      <a href="{{ profile.scholar_url }}">
+        {% include icon.html name='bar-chart' classes='large' %} Google scholar profile
+      </a>
+    </h3>
+  </div>
+  <div class="twelve wide column">
+    <div class="ui relaxed divided list">
       {% for category in site.data.publications.categories %}
-      <article class="card content-card border-0 shadow-sm mb-4">
-        <div class="card-body">
-          <h3 class="h5 mb-3">{{ category.title }}</h3>
-          {% if category.items and category.items.size > 0 %}
-          <ol class="publication-list mb-0 ps-3">
-            {% for publication in category.items %}
-            <li class="publication-item{% unless forloop.last %} mb-3{% endunless %}">
-              {% capture citation %}
-                {% if publication.authors %}{{ publication.authors }}{% endif %}{% if publication.year %} ({{ publication.year }}){% endif %}{% if publication.authors or publication.year %}.{% endif %}
-                {{ publication.title }}{% if publication.status %} ({{ publication.status }}){% endif %}.{% if publication.venue %} {{ publication.venue }}.{% endif %}
-              {% endcapture %}
-              {% assign citation = citation | strip %}
-              {% if publication.url %}
-              <a href="{{ publication.url }}" class="text-decoration-none">{{ citation }}</a>
-              {% else %}
-              {{ citation }}
-              {% endif %}
-              {% if publication.resources %}
-              <div class="d-flex flex-wrap gap-2 mt-2">
-                {% for resource in publication.resources %}
-                <a href="{{ resource.url }}" class="resource-link badge rounded-pill text-bg-light text-decoration-none">
-                  {% include icon.html name=resource.icon classes='me-1' %}{{ resource.label }}
-                </a>
-                {% endfor %}
-              </div>
-              {% endif %}
-            </li>
-            {% endfor %}
-          </ol>
-          {% else %}
-          <p class="mb-0 text-body-secondary">No entries yet.</p>
-          {% endif %}
+      <div class="item">
+        <h3 class="ui black header">{{ category.title }}</h3>
+        <div class="ui bulleted list">
+          {% for publication in category.items %}
+          <div class="item">
+            {% capture citation %}
+              {% if publication.authors %}{{ publication.authors }}{% endif %}{% if publication.year %} ({{ publication.year }}){% endif %}{% if publication.authors or publication.year %}.{% endif %}
+              {{ publication.title }}{% if publication.status %} ({{ publication.status }}){% endif %}.{% if publication.venue %} {{ publication.venue }}.{% endif %}
+            {% endcapture %}
+            {% assign citation = citation | strip %}
+            {% if publication.url %}
+            <a href="{{ publication.url }}">{{ citation }}</a>
+            {% else %}
+            {{ citation }}
+            {% endif %}
+            {% if publication.resources %}
+              {% for resource in publication.resources %}
+              <a class="resource-link" href="{{ resource.url }}">
+                {% include icon.html name=resource.icon %} [{{ resource.label }}]
+              </a>
+              {% endfor %}
+            {% endif %}
+          </div>
+          {% endfor %}
         </div>
-      </article>
+      </div>
       {% endfor %}
     </div>
   </div>
-</section>
+</div>

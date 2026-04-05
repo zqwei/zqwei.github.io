@@ -1,6 +1,6 @@
 # Personal website
 
-This is my personal website built with Jekyll and Bootstrap.
+This is my personal website built with Jekyll and Semantic UI.
 
 ## Content maintenance
 

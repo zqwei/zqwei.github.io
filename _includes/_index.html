@@ -4,15 +4,15 @@ title: Home
 type: home
 ---
 
-<main class="py-5">
-  <div class="container">
-    {% for post in paginator.posts %}
-      {% include post.html post=post %}
-    {% endfor %}
-    {% if paginator.total_pages > 1 %}
-      <div class="content-section">
-        {% include pagination.html %}
-      </div>
-    {% endif %}
-  </div>
+<main>
+  {% for post in paginator.posts %}
+    {% include post.html post=post %}
+  {% endfor %}
 </main>
+{% if paginator.total_pages > 1 %}
+  <div class="ui basic vertical segment">
+    <div class="ui center aligned text container">
+      {% include pagination.html %}
+    </div>
+  </div>
+{% endif %}

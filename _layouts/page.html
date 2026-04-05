@@ -3,25 +3,21 @@ layout: default
 type: page
 ---
 
-<nav class="navbar navbar-dark site-navbar shadow-sm">
-  <div class="container">
-    <a class="navbar-brand fw-semibold" href="{{ '/' | relative_url }}">Back to home</a>
+<div class="ui grey inverted vertical masthead center aligned segment">
+  <div class="ui container">
+    <div class="ui grey borderless large secondary inverted menu" id="navtop">
+      <a class="active item" href="{{ '/' | relative_url }}">back to home</a>
+    </div>
   </div>
-</nav>
-
-<main class="py-5">
-  <div class="container">
-    <section class="content-section">
-      <div class="card content-card border-0 shadow-sm">
-        <div class="card-body p-4 p-lg-5">
-          {% if page.title %}
-          <header class="mb-4">
-            <h1 class="section-title mb-0">{{ page.title }}</h1>
-          </header>
-          {% endif %}
+</div>
+<div class="ui container">
+  <div class="ui basic segment" id="example2">
+    <div class="ui container">
+      <div class="ui vertical stripe quote segment">
+        <main>
           {{ content }}
-        </div>
+        </main>
       </div>
-    </section>
+    </div>
   </div>
-</main>
+</div>
