@@ -2,8 +2,23 @@ name: Ziqiang Wei
 headline: Statistical minds of neuroscience
 role: postdoc, computational and statistical neuroscientist
 scholar_url: https://scholar.google.com/citations?user=5XIozvEAAAAJ&hl=en
+scholar_icon: bar-chart
+scholar_label: Google scholar profile
 github_url: https://github.com/zqwei
 twitter_url: https://twitter.com/zq_wei
 linkedin_url: https://www.linkedin.com/in/ziqiang-wei-8566a167/
 email_url: "#"
 email_text: weiz (at) janelia (dot) hhmi (dot) org
+footer_links:
+  - icon: bar-chart
+    label: google scholar profile
+    url: https://scholar.google.com/citations?user=5XIozvEAAAAJ&hl=en
+  - icon: github
+    label: github
+    url: https://github.com/zqwei
+  - icon: envelope
+    label: weiz (at) janelia (dot) hhmi (dot) org
+    url: "#"
+  - icon: twitter-x
+    label: "@ zq_wei"
+    url: https://twitter.com/zq_wei

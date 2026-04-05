@@ -20,18 +20,11 @@
         <div class="container">
           <div class="row">
             <div class="col-12 col-md-6 mb-3 mb-md-0">
-              <a class="footer-link d-block mb-1" href="{{ profile.scholar_url }}">
-                {% include icon.html name='bar-chart' %} google scholar profile
+              {% for link in profile.footer_links %}
+              <a class="footer-link d-block mb-1" href="{{ link.url }}">
+                {% include icon.html name=link.icon %} {{ link.label }}
               </a>
-              <a class="footer-link d-block mb-1" href="{{ profile.github_url }}">
-                {% include icon.html name='github' %} github
-              </a>
-              <a class="footer-link d-block mb-1" href="{{ profile.email_url }}">
-                {% include icon.html name='envelope' %} {{ profile.email_text }}
-              </a>
-              <a class="footer-link d-block mb-1" href="{{ profile.twitter_url }}">
-                {% include icon.html name='twitter' %} @ zq_wei
-              </a>
+              {% endfor %}
             </div>
             <div class="col-12 col-md-6">
               This website is designed by Ziqiang Wei.<br>
