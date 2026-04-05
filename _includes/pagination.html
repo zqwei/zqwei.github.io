@@ -1,25 +1,27 @@
 {% if paginator.total_pages > 1 %}
-  <div class="ui compact text menu">
+<nav aria-label="Pagination">
+  <ul class="pagination justify-content-center mb-0">
     {% if paginator.page == 2 %}
-      <a href="/" class="item"><i class="angle left icon"></i></a>
+      <li class="page-item"><a href="/" class="page-link" aria-label="Previous">&laquo;</a></li>
     {% elsif paginator.previous_page %}
-      <a href="{{ site.paginate_path | relative_url | replace: ":num", paginator.previous_page }}" class="item"><i class="angle left icon"></i></a>
+      <li class="page-item"><a href="{{ site.paginate_path | relative_url | replace: ':num', paginator.previous_page }}" class="page-link" aria-label="Previous">&laquo;</a></li>
     {% else %}
-      <span class="disabled item"><i class="angle left icon"></i></span>
+      <li class="page-item disabled"><span class="page-link">&laquo;</span></li>
     {% endif %}
     {% for page in (1..paginator.total_pages) %}
       {% if page == paginator.page %}
-        <span class="active item">{{ page }}</span>
+        <li class="page-item active"><span class="page-link">{{ page }}</span></li>
       {% elsif page == 1 %}
-        <a href="/" class="item">{{ page }}</a>
+        <li class="page-item"><a href="/" class="page-link">{{ page }}</a></li>
       {% else %}
-        <a href="{{ site.paginate_path | relative_url | replace: ":num", page }}" class="item">{{ page }}</a>
+        <li class="page-item"><a href="{{ site.paginate_path | relative_url | replace: ':num', page }}" class="page-link">{{ page }}</a></li>
       {% endif %}
     {% endfor %}
     {% if paginator.next_page %}
-      <a href="{{ site.paginate_path | relative_url | replace: ":num", paginator.next_page }}" class="item"><i class="angle right icon"></i></a>
+      <li class="page-item"><a href="{{ site.paginate_path | relative_url | replace: ':num', paginator.next_page }}" class="page-link" aria-label="Next">&raquo;</a></li>
     {% else %}
-      <span class="disabled item"><i class="angle right icon"></i></span>
+      <li class="page-item disabled"><span class="page-link">&raquo;</span></li>
     {% endif %}
-  </div>
+  </ul>
+</nav>
 {% endif %}

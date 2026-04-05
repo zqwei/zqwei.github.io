@@ -1,12 +1,14 @@
-<article class="ui basic vertical segment" itemscope itemtype="http://schema.org/BlogPosting">
-  <h1 class="ui header" itemprop="headline"><a href="{{ include.post.url | relative_url }}">{{ include.post.title }}</a></h1>
-  <div class="ui basic vertical segment">
-    <p>{% if include.post.author %}By <span itemprop="author">{{ include.post.author }}</span> on {% endif %}<time itemprop="datePublished" datetime="{{ include.post.date | date_to_xmlschema }}">{{ include.post.date | date: "%B %-d, %Y" }}</time>{% if include.post.comments %}. <a href="{{ include.post.url | relative_url }}#disqus_thread" data-disqus-identifier="{{ include.post.url | relative_url }}"></a>{% endif %}</p>
-  </div>
-  <div class="ui basic vertical segment" itemprop="articleBody">
-    {{ include.post.content | markdownify }}
-  </div>
-  <div class="ui basic vertical segment">
-    <p>{% include post_tags.html post=include.post %}</p>
+<article class="content-section" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="card content-card border-0 shadow-sm">
+    <div class="card-body p-4 p-lg-5">
+      <h1 class="section-title mb-3" itemprop="headline"><a href="{{ include.post.url | relative_url }}" class="text-decoration-none">{{ include.post.title }}</a></h1>
+      <p class="text-body-secondary mb-4">{% if include.post.author %}By <span itemprop="author">{{ include.post.author }}</span> on {% endif %}<time itemprop="datePublished" datetime="{{ include.post.date | date_to_xmlschema }}">{{ include.post.date | date: "%B %-d, %Y" }}</time>{% if include.post.comments %}. <a href="{{ include.post.url | relative_url }}#disqus_thread" data-disqus-identifier="{{ include.post.url | relative_url }}"></a>{% endif %}</p>
+      <div itemprop="articleBody">
+        {{ include.post.content | markdownify }}
+      </div>
+      <div class="mt-4 pt-3 border-top">
+        <p class="mb-0">{% include post_tags.html post=include.post %}</p>
+      </div>
+    </div>
   </div>
 </article>

@@ -1,0 +1,11 @@
+{% assign icon_name = include.name | default: 'link-45deg' %}
+{% case icon_name %}
+  {% when 'comments' %}{% assign icon_name = 'chat-square-text' %}
+  {% when 'chart bar' %}{% assign icon_name = 'bar-chart' %}
+  {% when 'chart-bar' %}{% assign icon_name = 'bar-chart' %}
+  {% when 'chrome' %}{% assign icon_name = 'globe' %}
+  {% when 'archive' %}{% assign icon_name = 'archive' %}
+  {% when 'twitter square' %}{% assign icon_name = 'twitter' %}
+  {% when 'envelope' %}{% assign icon_name = 'envelope' %}
+{% endcase %}
+<i class="bi bi-{{ icon_name }}{% if include.classes %} {{ include.classes }}{% endif %}" aria-hidden="true"></i>

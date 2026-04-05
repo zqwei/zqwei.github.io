@@ -3,11 +3,15 @@ layout: default
 type: post
 ---
 
-<main>
-  {% include post.html post=page %}
-</main>
-{% if page.comments %}
-  <div class="ui basic vertical segment">
-    {% include disqus.html %}
+<main class="py-5">
+  <div class="container">
+    {% include post.html post=page %}
+    {% if page.comments %}
+      <div class="card content-card border-0 shadow-sm mt-4">
+        <div class="card-body p-4">
+          {% include disqus.html %}
+        </div>
+      </div>
+    {% endif %}
   </div>
-{% endif %}
+</main>

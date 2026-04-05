@@ -3,263 +3,39 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <base href="{{ site.baseurl }}">
     <meta name="author" content="{{ site.author }}">
     <meta name="description" content="{{ site.description }}">
     <meta name="keywords" content="{{ site.keywords }}">
-    <title>{{ page.title }}</title>
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}dist/semantic.min.css">
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}dist/components/site.css">
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}dist/components/container.css">
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}dist/components/grid.css">
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}dist/components/header.css">
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}dist/components/image.css">
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}dist/components/menu.css">
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}dist/components/form.css">
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}dist/components/accordion.css">
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}dist/components/divider.css">
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}dist/components/dropdown.css">
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}dist/components/segment.css">
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}dist/components/button.css">
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}dist/components/list.css">
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}dist/components/label.css">
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}dist/components/icon.css">
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}dist/components/sidebar.css">
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}dist/components/sticky.css">
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}dist/components/rail.css">
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}dist/components/transition.css">
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}dist/components/tab.css">
-
-
-    <script src="{{ site.baseurl }}js/jquery.min.js"></script>
-    <script src="{{ site.baseurl }}dist/semantic.js"></script>
-    <script src="{{ site.baseurl }}dist/components/visibility.js"></script>
-    <script src="{{ site.baseurl }}dist/components/sidebar.js"></script>
-    <script src="{{ site.baseurl }}dist/components/transition.js"></script>
-    <script src="{{ site.baseurl }}dist/components/sticky.js"></script>
-    <script src="{{ site.baseurl }}dist/components/form.js"></script>
-    <script src="{{ site.baseurl }}dist/components/tab.js"></script>
-    <script src="{{ site.baseurl }}dist/components/accordion.js"></script>
-
-    <script>
-      $(document)
-        .ready(function() {
-          $('.ui.sidebar')
-            .sidebar('attach events', '.toggle.item')
-          ;
-          $('.ui.accordion')
-            .accordion()
-          ;
-        })
-      ;
-    </script>
-
-    <style type="text/css">
-    .hidden.menu {
-      display: none;
-    }
-
-    .pusher {
-        display: flex;
-        min-height: 100vh;
-        flex-direction: column;
-    }
-
-    .pusher > .footer {
-      flex: 1;
-    }
-
-    a{
-        color: gray;
-    }
-    a.footer{
-      color: white;
-    }
-    a.footer:hover{
-      color: #32CD32;
-    }
-    p{ text-align: justify; font-size: 1.33em;}
-
-    .masthead.segment {
-      min-height: 50px;
-      padding: 1em 0em;
-    }
-    .masthead .logo.item img {
-      margin-right: 1em;
-    }
-    .masthead .ui.menu .ui.button {
-      margin-left: 0.5em;
-    }
-    .masthead h1.ui.header {
-      margin-top: 0em;
-      margin-bottom: 0em;
-      font-size: 4em;
-      font-weight: normal;
-    }
-    .masthead h2 {
-      font-size: 1.7em;
-      font-weight: normal;
-      margin-top: 2em;
-    }
-
-    .ui.vertical.stripe {
-      display: flex;
-      min-height: 85vh;
-      flex-direction: column;
-    }
-    .ui.vertical.stripe h3 {
-      font-size: 1.33em;
-    }
-    .ui.vertical.stripe .button + h3,
-    .ui.vertical.stripe p + h3 {
-      margin-top: 3em;
-    }
-    .ui.vertical.stripe .floated.image {
-      clear: both;
-    }
-
-    .ui.vertical.stripe .horizontal.divider {
-      margin: 3em 0em;
-    }
-
-    .quote.stripe.segment {
-      padding: 0em;
-    }
-    .quote.stripe.segment .grid .column {
-      padding-top: 0em;
-      padding-bottom: 0em;
-    }
-
-    .footer.segment {
-        padding: 1em 1em;
-    }
-
-    .secondary.menu .toc.item {
-      display: none;
-    }
-
-    @media only screen and (max-width: 700px) {
-      .ui.fixed.menu {
-        display: none !important;
-      }
-      .secondary.menu .item,
-      .secondary.menu .menu {
-        display: none !important;
-      }
-      .secondary.menu .toc.item {
-        display: block !important;
-      }
-      .masthead.segment {
-        min-height: 100px;
-      }
-      .masthead h1.ui.header {
-        font-size: 2em;
-        /*margin-top: 1.5em;*/
-      }
-      .masthead h2 {
-        /*margin-top: 0.5em;*/
-        font-size: 1.5em;
-      }
-    }
-    </style>
-
-    <script src="{{ site.baseurl }}js/jquery.min.js"></script>
-    <script src="{{ site.baseurl }}dist/semantic.js"></script>
-    <script src="{{ site.baseurl }}dist/components/visibility.js"></script>
-    <script src="{{ site.baseurl }}dist/components/sidebar.js"></script>
-    <script src="{{ site.baseurl }}dist/components/transition.js"></script>
-    <script src="{{ site.baseurl }}dist/components/sticky.js"></script>
-    <script src="{{ site.baseurl }}dist/components/form.js"></script>
-    <script src="{{ site.baseurl }}dist/components/tab.js"></script>
-    <script src="{{ site.baseurl }}dist/components/accordion.js"></script>
-    <script>
-    $(document)
-      .ready(function() {
-        // fix menu when passed
-        $('.masthead')
-          .visibility({
-            once: false,
-            onBottomPassed: function() {
-              $('.fixed.menu').transition('fade in');
-            },
-            onBottomPassedReverse: function() {
-              $('.fixed.menu').transition('fade out');
-            }
-          })
-        ;
-        // create sidebar and attach to menu open
-        $('.ui.sidebar')
-          .sidebar('attach events', '.toc.item');
-      });
-    </script>
-    <script>
-    $(document).ready(function() {
-        $('.ui.accordion').accordion();
-        $('.ui.menu .ui.dropdown').dropdown({
-          on: 'hover'});
-        $('.ui.menu a.item').on('click', function(){
-            $(this)
-                .addClass('active')
-                .siblings()
-                .removeClass('active');
-            });
-        $('.trigger.example .accordion').accordion({
-            selector: {
-                trigger: '.title .icon'}
-            });
-    });
-    </script>
-    <script language='javascript'>
-         $(document).ready(function(){
-            $('.ui.accordion').accordion();
-            $('.ui.sticky')
-              .sticky({
-                context: '#example2',
-                pushing: true
-              });
-         });
-    </script>
-
+    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+    <link href="{{ '/assets/vendor/bootstrap/bootstrap.min.css' | relative_url }}" rel="stylesheet">
+    <link href="{{ '/assets/vendor/bootstrap-icons/bootstrap-icons.min.css' | relative_url }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
+    {% seo %}
   </head>
-
   <body>
     {% assign profile = site.data.profile %}
-    {{ content }}
-    <div class="ui grey footer inverted vertical segment">
-      <div class="ui container">
-        <div class="ui stackable inverted divided equal height stackable grid">
-          <div class="eight wide column">
-            <a class="footer" href="{{ profile.scholar_url }}">
-              <i class="large chart bar icon"></i> google scholar profile
-            </a>
-            <br>
-            <a class="footer" href="{{ profile.github_url }}">
-              <i class="large github icon"></i> github
-            </a>
-            <br>
-            <a class="footer" href="{{ profile.email_url }}">
-              <i class="large envelope icon"></i> {{ profile.email_text }}
-            </a>
-            <br>
-            <a class="footer" href="{{ profile.twitter_url }}">
-              <i class="large twitter icon"></i> @ zq_wei
-            </a>
-            <br>
-          </div>
-          <div class="eight wide column">
-            This website is designed by Ziqiang Wei.
-            <br>
-            MIT License Copyright (c) 2017 Ziqiang Wei
-            <br>
-            Front-end powered by [ <a href="https://semantic-ui.com/" style="color:white">Jekyll-Semantic</a> ]
-            <br>
-            Source code is provided at [ <a href="https://github.com/zqwei/zqwei.github.io" style="color:white">git repo</a> ].
+    <div class="site-shell">
+      {{ content }}
+      <footer class="site-footer mt-auto">
+        <div class="container py-4">
+          <div class="row g-4 align-items-start">
+            <div class="col-md-6">
+              <div class="d-flex flex-column gap-2">
+                <a class="footer-link" href="{{ profile.scholar_url }}">{% include icon.html name='bar-chart' classes='me-2' %}Google Scholar profile</a>
+                <a class="footer-link" href="{{ profile.github_url }}">{% include icon.html name='github' classes='me-2' %}GitHub</a>
+                <a class="footer-link" href="{{ profile.email_url }}">{% include icon.html name='envelope' classes='me-2' %}{{ profile.email_text }}</a>
+                <a class="footer-link" href="{{ profile.twitter_url }}">{% include icon.html name='twitter' classes='me-2' %}@zq_wei</a>
+              </div>
+            </div>
+            <div class="col-md-6 text-md-end">
+              <p class="mb-1">This website is designed by Ziqiang Wei.</p>
+              <p class="mb-1">MIT License Copyright (c) 2017 Ziqiang Wei</p>
+              <p class="mb-0">Source code is available at <a class="footer-link d-inline" href="https://github.com/zqwei/zqwei.github.io">git repo</a>.</p>
+            </div>
           </div>
         </div>
-      </div>
+      </footer>
     </div>
+    <script src="{{ '/assets/vendor/bootstrap/bootstrap.bundle.min.js' | relative_url }}"></script>
   </body>
-
-
-
 </html>

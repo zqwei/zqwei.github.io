@@ -1,53 +1,36 @@
 {% assign profile = site.data.profile %}
-<div class="ui grey inverted large top fixed hidden menu" id="navhide">
-  <div class="ui container">
-    <a class="active item" href="#home">about</a>
-    <a class="item" href="{{ site.baseurl }}news.html">news</a>
-    <a class="item" href="#publication">publication</a>
-    <a class="item" href="#teaching">teaching</a>
-    <a class="item" href="{{ site.baseurl }}github_TOC.html">git toc</a>
-    <a class="item" href="#links">links</a>
+<nav class="navbar navbar-expand-lg navbar-dark site-navbar sticky-top shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-semibold" href="#home">{{ profile.name }}</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#siteNav" aria-controls="siteNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="siteNav">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="#home">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{ '/news.html' | relative_url }}">News</a></li>
+        <li class="nav-item"><a class="nav-link" href="#publication">Publication</a></li>
+        <li class="nav-item"><a class="nav-link" href="#teaching">Teaching</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{ '/github_TOC.html' | relative_url }}">Git TOC</a></li>
+        <li class="nav-item"><a class="nav-link" href="#links">Links</a></li>
+      </ul>
+    </div>
   </div>
-</div>
+</nav>
 
-<div class="ui grey inverted vertical masthead center aligned segment">
-  <div class="ui container">
-    <div class="ui grey borderless large secondary inverted menu" id="navtop">
-      <a class="active item" href="#home">about</a>
-      <a class="item" href="{{ site.baseurl }}news.html">news</a>
-      <a class="item" href="#publication">publication</a>
-      <a class="item" href="#teaching">teaching</a>
-      <a class="item" href="{{ site.baseurl }}github_TOC.html">git toc</a>
-      <a class="item" href="#links">links</a>
-    </div>
+<header class="hero-section" id="home">
+  <div class="container text-center">
+    <h1 class="display-3 fw-light mb-2">{{ profile.name }}</h1>
+    <p class="lead mb-2">{{ profile.headline }}</p>
+    <p class="hero-role mb-0"><i>[{{ profile.role }}]</i></p>
   </div>
-</div>
-<div class="ui grey inverted vertical masthead center aligned segment">
-  <div class="ui text container">
-   <h1 class="ui inverted header">
-     {{ profile.name }}
-    </h1>
-    <h2>{{ profile.headline }}</h2>
-    <h2><i>[{{ profile.role }}]</i></h2>
- </div>
-</div>
-<div class="ui container">
-  <div class="ui basic segment" id="example2">
-    <div class="ui container">
-      <div class="ui vertical stripe quote segment">
-        <div class="ui vertical segment" id="home">
-          {% include research.html %}
-        </div>
-        <div class="ui vertical segment" id="publication">
-          {% include publication.html %}
-        </div>
-        <div class="ui vertical segment" id="teaching">
-          {% include teaching.html %}
-        </div>
-        <div class="ui vertical segment" id="links">
-          {% include links.html %}
-        </div>
-      </div>
-    </div>
+</header>
+
+<main class="py-5">
+  <div class="container">
+    {% include research.html %}
+    {% include publication.html %}
+    {% include teaching.html %}
+    {% include links.html %}
   </div>
-</div>
+</main>
