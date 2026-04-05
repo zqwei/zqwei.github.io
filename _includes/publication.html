@@ -1,43 +1,42 @@
 {% assign profile = site.data.profile %}
-<div class="ui internally celled stackable grid">
-  <div class="four wide column">
-    <h2 class="ui header">Publications</h2>
-    <h3 class="ui header">
+<div class="row g-0">
+  <div class="col-12 col-lg-3 section-sidebar">
+    <h2 class="section-title">Publications</h2>
+    <h3>
       <a href="{{ profile.scholar_url }}">
-        {% include icon.html name='bar-chart' classes='large' %} Google scholar profile
+        {% include icon.html name='bar-chart' %} Google scholar profile
       </a>
     </h3>
   </div>
-  <div class="twelve wide column">
-    <div class="ui relaxed divided list">
-      {% for category in site.data.publications.categories %}
-      <div class="item">
-        <h3 class="ui black header">{{ category.title }}</h3>
-        <div class="ui bulleted list">
-          {% for publication in category.items %}
-          <div class="item">
-            {% capture citation %}
-              {% if publication.authors %}{{ publication.authors }}{% endif %}{% if publication.year %} ({{ publication.year }}){% endif %}{% if publication.authors or publication.year %}.{% endif %}
-              {{ publication.title }}{% if publication.status %} ({{ publication.status }}){% endif %}.{% if publication.venue %} {{ publication.venue }}.{% endif %}
-            {% endcapture %}
-            {% assign citation = citation | strip %}
-            {% if publication.url %}
-            <a href="{{ publication.url }}">{{ citation }}</a>
-            {% else %}
-            {{ citation }}
-            {% endif %}
-            {% if publication.resources %}
-              {% for resource in publication.resources %}
-              <a class="resource-link" href="{{ resource.url }}">
-                {% include icon.html name=resource.icon %} [{{ resource.label }}]
-              </a>
-              {% endfor %}
-            {% endif %}
-          </div>
-          {% endfor %}
-        </div>
-      </div>
-      {% endfor %}
+  <div class="col-12 col-lg-9 section-body-col ps-lg-4">
+    {% for category in site.data.publications.categories %}
+    <div class="mb-4">
+      <h3>{{ category.title }}</h3>
+      <ul class="list-unstyled publication-list">
+        {% for publication in category.items %}
+        <li class="mb-2">
+          &#8226;
+          {% capture citation %}
+            {% if publication.authors %}{{ publication.authors }}{% endif %}{% if publication.year %} ({{ publication.year }}){% endif %}{% if publication.authors or publication.year %}.{% endif %}
+            {{ publication.title }}{% if publication.status %} ({{ publication.status }}){% endif %}.{% if publication.venue %} {{ publication.venue }}.{% endif %}
+          {% endcapture %}
+          {% assign citation = citation | strip %}
+          {% if publication.url %}
+          <a href="{{ publication.url }}">{{ citation }}</a>
+          {% else %}
+          {{ citation }}
+          {% endif %}
+          {% if publication.resources %}
+            {% for resource in publication.resources %}
+            <a class="resource-link" href="{{ resource.url }}">
+              {% include icon.html name=resource.icon %} [{{ resource.label }}]
+            </a>
+            {% endfor %}
+          {% endif %}
+        </li>
+        {% endfor %}
+      </ul>
     </div>
+    {% endfor %}
   </div>
 </div>

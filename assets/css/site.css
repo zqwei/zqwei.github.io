@@ -20,10 +20,17 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
+a {
+  color: var(--site-dark-2);
+}
+
 p {
   text-align: justify;
   line-height: 1.7;
+  font-size: 1.1rem;
 }
+
+/* ── Layout shell ── */
 
 .site-shell {
   min-height: 100vh;
@@ -31,30 +38,29 @@ p {
   flex-direction: column;
 }
 
-.site-navbar,
-.site-footer,
-.hero-section {
+/* ── Fixed navbar (hidden until hero scrolls away) ── */
+
+#nav-fixed {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+#nav-fixed.nav-visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* ── Hero / masthead ── */
+
+.hero-section,
+.site-footer {
   background: linear-gradient(180deg, var(--site-dark) 0%, var(--site-dark-2) 100%);
-}
-
-.site-navbar .navbar-brand,
-.site-navbar .nav-link,
-.site-footer,
-.site-footer .footer-link,
-.hero-section {
   color: #fff;
-}
-
-.site-navbar .nav-link:hover,
-.site-navbar .nav-link:focus,
-.site-footer .footer-link:hover,
-.site-footer .footer-link:focus {
-  color: var(--site-accent);
 }
 
 .hero-section {
   padding: 4.5rem 0 3.5rem;
-  text-align: center;
 }
 
 .hero-section .display-3 {
@@ -64,14 +70,28 @@ p {
 .hero-role {
   font-size: 1.2rem;
   opacity: 0.95;
+  margin-bottom: 0.25rem;
 }
+
+/* Navbar links inside hero */
+.hero-section .nav-link,
+.hero-section .nav-link:hover,
+.hero-section .nav-link:focus {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.hero-section .nav-link:hover,
+.hero-section .nav-link:focus {
+  color: var(--site-accent);
+}
+
+/* ── Content sections ── */
 
 .content-section {
   scroll-margin-top: 5rem;
   margin-bottom: 3rem;
 }
 
-.section-heading,
 .section-sidebar {
   margin-bottom: 1rem;
 }
@@ -82,14 +102,19 @@ p {
   margin-bottom: 0.5rem;
 }
 
-.section-subtitle {
-  color: var(--site-muted);
-  margin-bottom: 0;
+/* Vertical separator for sidebar/body two-column layout (desktop only) */
+@media (min-width: 992px) {
+  .section-body-col {
+    border-left: 1px solid var(--site-border);
+  }
 }
 
-.content-card {
+/* ── Research panel cards ── */
+
+.research-panel {
   background: var(--site-surface);
-  border-radius: 1rem;
+  border-radius: 0.75rem;
+  border: 1px solid var(--site-border);
 }
 
 .research-panel .card-body {
@@ -102,29 +127,35 @@ p {
   object-fit: contain;
   background: #f8f9fa;
   border: 1px solid var(--site-border);
+  border-radius: 0.5rem;
   padding: 1rem;
 }
 
+/* ── News list ── */
+
 .news-item {
-  padding: 0 0 1rem;
-  margin-bottom: 1rem;
+  padding: 0 0 0.75rem;
+  margin-bottom: 0.75rem;
   border-color: var(--site-border) !important;
 }
 
 .news-item:last-child {
   margin-bottom: 0;
   padding-bottom: 0;
+  border-bottom: none !important;
 }
 
-.publication-list,
-.news-list {
-  margin-bottom: 0;
-}
+/* ── Resource / badge links ── */
 
 .resource-link {
   color: var(--site-text);
   border: 1px solid var(--site-border);
-  font-weight: 500;
+  border-radius: 0.25rem;
+  padding: 0.05rem 0.35rem;
+  font-size: 0.85em;
+  text-decoration: none;
+  white-space: nowrap;
+  margin-left: 0.25rem;
 }
 
 .resource-link:hover,
@@ -133,9 +164,24 @@ p {
   border-color: var(--site-accent);
 }
 
+/* ── Footer ── */
+
+.site-footer {
+  margin-top: auto;
+  font-size: 0.95rem;
+}
+
 .footer-link {
+  color: #fff;
   text-decoration: none;
 }
+
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--site-accent);
+}
+
+/* ── Pagination ── */
 
 .pagination .page-link {
   color: var(--site-dark-2);
@@ -145,6 +191,8 @@ p {
   background-color: var(--site-dark-2);
   border-color: var(--site-dark-2);
 }
+
+/* ── Responsive tweaks ── */
 
 @media (max-width: 991.98px) {
   .hero-section {

@@ -1,35 +1,34 @@
-<div class="ui internally celled stackable grid">
-  <div class="four wide column">
-    <h2 class="ui header">Links</h2>
+<div class="row g-0">
+  <div class="col-12 col-lg-3 section-sidebar">
+    <h2 class="section-title">Links</h2>
   </div>
-  <div class="twelve wide column">
-    <div class="ui relaxed divided list">
-      {% for category in site.data.links.categories %}
-      <div class="item">
-        <h3 class="ui black header">{{ category.title }}</h3>
-        <div class="ui bulleted list">
-          {% for item in category.items %}
-          <div class="item">
-            {% if item.title and item.url %}
-            {% if item.url contains '://' %}
-              {% assign link_url = item.url %}
-            {% else %}
-              {% assign link_url = item.url | relative_url %}
-            {% endif %}
-            <a href="{{ link_url | strip }}">{{ item.title }}</a>{% if item.description %}: {{ item.description }}{% endif %}
-            {% elsif item.description %}
-            {{ item.description }}
-            {% endif %}
-            {% if item.resources %}
-              {% for resource in item.resources %}
-              <a class="resource-link" href="{{ resource.url }}">[{{ resource.label }}]</a>
-              {% endfor %}
-            {% endif %}
-          </div>
-          {% endfor %}
-        </div>
-      </div>
-      {% endfor %}
+  <div class="col-12 col-lg-9 section-body-col ps-lg-4">
+    {% for category in site.data.links.categories %}
+    <div class="mb-4">
+      <h3>{{ category.title }}</h3>
+      <ul class="list-unstyled">
+        {% for item in category.items %}
+        <li class="mb-2">
+          &#8226;
+          {% if item.title and item.url %}
+          {% if item.url contains '://' %}
+            {% assign link_url = item.url %}
+          {% else %}
+            {% assign link_url = item.url | relative_url %}
+          {% endif %}
+          <a href="{{ link_url | strip }}">{{ item.title }}</a>{% if item.description %}: {{ item.description }}{% endif %}
+          {% elsif item.description %}
+          {{ item.description }}
+          {% endif %}
+          {% if item.resources %}
+            {% for resource in item.resources %}
+            <a class="resource-link" href="{{ resource.url }}">[{{ resource.label }}]</a>
+            {% endfor %}
+          {% endif %}
+        </li>
+        {% endfor %}
+      </ul>
     </div>
+    {% endfor %}
   </div>
 </div>

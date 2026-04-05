@@ -1,27 +1,29 @@
 {% assign panels = site.data.research.panels | default: site.data.research.items %}
-<h2 class="ui header">Research portfolio</h2>
-<div class="ui three column stackable padded grid">
+<h2 class="section-title mb-3">Research portfolio</h2>
+<div class="row row-cols-1 row-cols-md-3 g-3">
   {% for panel in panels %}
-  <div class="column">
-    <div class="ui segment research-panel">
-      <h3>{{ panel.title }}</h3>
-      {% if panel.type == 'news' %}
-        {% include _news.html limit=panel.limit %}
-        {% if panel.url %}
-        <a href="{{ panel.url | relative_url }}">[View all news]</a>
+  <div class="col">
+    <div class="card h-100 research-panel">
+      <div class="card-body">
+        <h3>{{ panel.title }}</h3>
+        {% if panel.type == 'news' %}
+          {% include _news.html limit=panel.limit %}
+          {% if panel.url %}
+          <a href="{{ panel.url | relative_url }}">[View all news]</a>
+          {% endif %}
+        {% else %}
+          {% if panel.summary %}
+          <p>{{ panel.summary }}</p>
+          {% endif %}
+          {% if panel.url %}
+          <a href="{{ panel.url }}">
+            <img class="research-image" src="{{ panel.image }}" alt="{{ panel.title }}">
+          </a>
+          {% elsif panel.image %}
+          <img class="research-image" src="{{ panel.image }}" alt="{{ panel.title }}">
+          {% endif %}
         {% endif %}
-      {% else %}
-        {% if panel.summary %}
-        <p>{{ panel.summary }}</p>
-        {% endif %}
-        {% if panel.url %}
-        <a href="{{ panel.url }}" class="ui large rounded image">
-          <img src="{{ panel.image }}" alt="{{ panel.title }}">
-        </a>
-        {% elsif panel.image %}
-        <img class="ui large rounded image" src="{{ panel.image }}" alt="{{ panel.title }}">
-        {% endif %}
-      {% endif %}
+      </div>
     </div>
   </div>
   {% endfor %}

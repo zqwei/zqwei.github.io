@@ -1,16 +1,17 @@
-{% assign icon_name = include.name | default: 'linkify' %}
-{% case icon_name %}
-  {% when 'comments' %}{% assign icon_name = 'comments outline' %}
-  {% when 'chart bar' %}{% assign icon_name = 'chart bar' %}
-  {% when 'chart-bar' %}{% assign icon_name = 'chart bar' %}
-  {% when 'bar-chart' %}{% assign icon_name = 'chart bar' %}
-  {% when 'chrome' %}{% assign icon_name = 'chrome' %}
-  {% when 'archive' %}{% assign icon_name = 'archive' %}
-  {% when 'twitter square' %}{% assign icon_name = 'twitter square' %}
-  {% when 'twitter' %}{% assign icon_name = 'twitter' %}
-  {% when 'instagram' %}{% assign icon_name = 'instagram' %}
-  {% when 'envelope' %}{% assign icon_name = 'envelope' %}
-  {% when 'github' %}{% assign icon_name = 'github' %}
-  {% when 'youtube' %}{% assign icon_name = 'youtube' %}
+{% assign src = include.name | default: 'link-45deg' %}
+{% case src %}
+  {% when 'bar-chart' %}{% assign bi = 'bar-chart-line' %}
+  {% when 'chart-bar' %}{% assign bi = 'bar-chart-line' %}
+  {% when 'chart bar' %}{% assign bi = 'bar-chart-line' %}
+  {% when 'github' %}{% assign bi = 'github' %}
+  {% when 'envelope' %}{% assign bi = 'envelope' %}
+  {% when 'twitter' %}{% assign bi = 'twitter' %}
+  {% when 'twitter square' %}{% assign bi = 'twitter' %}
+  {% when 'instagram' %}{% assign bi = 'instagram' %}
+  {% when 'youtube' %}{% assign bi = 'youtube' %}
+  {% when 'archive' %}{% assign bi = 'archive' %}
+  {% when 'chrome' %}{% assign bi = 'globe' %}
+  {% when 'comments' %}{% assign bi = 'chat' %}
+  {% else %}{% assign bi = src %}
 {% endcase %}
-<i class="{% if include.classes %}{{ include.classes }} {% endif %}{{ icon_name }} icon" aria-hidden="true"></i>
+<i class="bi bi-{{ bi }}{% if include.classes %} {{ include.classes }}{% endif %}" aria-hidden="true"></i>
