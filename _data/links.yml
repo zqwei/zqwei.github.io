@@ -1,0 +1,39 @@
+categories:
+  - title: Community-based resources
+    items:
+      - title: Chinese Systems and Computational Neural group
+        url: https://docs.google.com/forms/d/e/1FAIpQLSdZgaihYBtmGozmLf7IuwEZJTFtqHV1jV23qq0iJBk0OZutzQ/viewform?usp=sf_link
+      - title: Ephys-ophys
+        url: http://im-phys.org/
+        description: http://im-phys.org/
+  - title: Git Repos
+    items:
+      - title: Git TOC
+        url: /github_TOC.html
+      - title: Collection of other github repos
+        url: /useful_repo_links.html
+  - title: Data sharing
+    items:
+      - description: 'Wei, Z., Lin, BJ., Chen, TW., Daie, K., Svoboda, K., Druckmann, S. (2020): Raw data for "A comparison of neuronal population dynamics measured with calcium imaging and electrophysiology". figshare. Dataset.'
+        resources:
+          - label: https://doi.org/10.6084/m9.figshare.12792587
+            url: https://doi.org/10.6084/m9.figshare.12792587
+      - description: 'Wei, Z., Lin, BJ., Chen, TW., Daie, K., Svoboda, K., Druckmann, S. (2020): Precompiled data for "A comparison of neuronal population dynamics measured with calcium imaging and electrophysiology". figshare. Dataset.'
+        resources:
+          - label: https://doi.org/10.6084/m9.figshare.12786296.v1
+            url: https://doi.org/10.6084/m9.figshare.12786296.v1
+      - title: http://im-phys.org/data
+        url: http://im-phys.org/data
+      - description: Wei, Z., Inagaki, H., Li, N., Svoboda, K., & Druckmann, S. (2018). Simultaneous extracellular electrophysiology data.
+        resources:
+          - label: DOI: 10.6084/m9.figshare.7372898
+            url: https://figshare.com/articles/Simultaneous_extracellular_electrophysiology_data/7372898
+  - title: Methods and technologies
+    items:
+      - title: Calcium to spike model comparison
+        url: https://github.com/zqwei/Ca-Imaging-Deconv-List
+      - title: Epoch-Dependent Linear Dynamical Systems
+        url: https://github.com/zqwei/Epoch-Dependent-LDS-Fit
+        resources:
+          - label: DOI:10.5281/zenodo.1403158
+            url: https://doi.org/10.5281/zenodo.1403158

@@ -1,0 +1,147 @@
+categories:
+  - title: Statistical neuroscience
+    items:
+      - title: Sensorimotor processing in the zebrafish dorsal raphe nucleus
+        status: in preparation
+      - title: Nonlinear evolution via spatially-dependent linear dynamics for electrophysiology and calcium data
+        authors: Hernandez, D., Moretti, A. K., Saxena, S., Wei, Z., Cunningham, J., & Paninski, L.
+        year: 2020
+        venue: NBDT 1(7)
+        url: https://nbdt.scholasticahq.com/article/13476-nonlinear-evolution-via-spatially-dependent-linear-dynamics-for-electrophysiology-and-calcium-data
+      - title: Single-cell reconstruction of emerging population activity in an entire developing circuit
+        authors: Wan, Y., Wei, Z., Looger, L. L., Koyama, M., et al.
+        year: 2019
+        venue: Cell 179(2)
+        url: https://www.cell.com/cell/fulltext/S0092-8674(19)30958-4
+        resources:
+          - label: Git
+            icon: github
+            url: https://github.com/zqwei/Zebrafish_spinal_cord_development
+          - label: Preview
+            icon: comments
+            url: https://www.sciencedirect.com/science/article/pii/S0092867419310128
+          - label: Nature news & views
+            icon: comments
+            url: https://www.nature.com/articles/d41586-019-03492-6
+          - label: News
+            icon: newspaper
+            url: https://www.sciencedaily.com/releases/2019/09/190926141732.htm
+      - title: An orderly single-trial organization of population dynamics in premotor cortex predicts behavioral variability
+        authors: Wei, Z., Inagaki, H., Li, N., Svoboda, K., & Druckmann, S.
+        year: 2019
+        venue: Nature Communications 10(216)
+        url: https://www.nature.com/articles/s41467-018-08141-6
+        resources:
+          - label: Git
+            icon: github
+            url: https://github.com/zqwei/TLDS_ALM_Data
+          - label: Early version
+            icon: archive
+            url: https://www.biorxiv.org/content/early/2018/07/25/376830
+      - title: A novel variational family for hidden nonlinear Markov models
+        authors: Hernandez, D., Moretti, A. K., Wei, Z., Saxena, S., Cunningham, J., & Paninski, L.
+        year: 2018
+        venue: arXiv:1811.02459
+        url: https://openreview.net/forum?id=SJMO2iCct7
+  - title: Computational neuroscience
+    items:
+      - title: A brainstem integrator for self-location memory and positional homeostasis in zebrafish
+        authors: Yang, E., Zwart, M. F., James, B., Rubinov, M., Wei, Z., et al.
+        year: 2022
+        venue: Cell, 185(26), 5011-5027
+        url: https://www.sciencedirect.com/science/article/pii/S0092867422014660
+        resources:
+          - label: Talk
+            icon: youtube
+            url: https://www.youtube.com/watch?v=RQzRmHeNI3g
+          - label: Early version
+            icon: archive
+            url: https://www.biorxiv.org/content/10.1101/2021.11.26.468907v1
+      - title: Visual physiology of the layer 4 cortical circuit in silico
+        authors: Arkhipov, A., Gouwens, N. W., Billeh, Y. N., Gratiy, S., Iyer, R., Wei, Z., et al.
+        year: 2018
+        venue: PLOS Computational Biology, 14(11), e1006535
+        url: https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1006535
+        resources:
+          - label: Git#1
+            icon: github
+            url: https://github.com/AllenInstitute/arkhipov2018_layer4
+          - label: Git#2
+            icon: github
+            url: https://github.com/zqwei/LIF_Vis_model
+      - title: Confidence estimation as a stochastic process in a neurodynamical system of decision making
+        authors: Wei, Z. & Wang, X. J.
+        year: 2015
+        venue: Journal of Neurophysiology, 114(1), 99-113
+        url: https://www.physiology.org/doi/abs/10.1152/jn.00793.2014
+        resources:
+          - label: Git
+            icon: github
+            url: https://github.com/zqwei/Multi-item-Working-Memory-Network
+      - title: From distributed resources to limited slots in multiple-item working memory: a spiking network model with normalization
+        authors: Wei, Z., Wang, X. J., & Wang, D. H.
+        year: 2012
+        venue: Journal of Neuroscience, 32(33), 11228-11240
+        url: http://www.jneurosci.org/content/32/33/11228.short
+        resources:
+          - label: Git
+            icon: github
+            url: https://github.com/zqwei/Multi-item-Working-Memory-Network
+          - label: Journal club
+            icon: comments
+            url: http://www.jneurosci.org/content/33/2/385
+  - title: Methods and technologies
+    items:
+      - title: Fast and sensitive GCaMP calcium indicators for imaging neural populations
+        authors: Zhang, Y., Rózsa, M., Liang, Y., Bushey, D., Wei, Z., et al.
+        year: 2023
+        venue: Nature
+        url: https://doi.org/10.1038/s41586-023-05828-9
+        resources:
+          - label: Early version
+            icon: archive
+            url: https://www.biorxiv.org/content/10.1101/2021.11.08.467793v2
+          - label: News & views forum
+            icon: comments
+            url: https://www.nature.com/articles/d41586-023-00704-y
+          - label: Git
+            icon: github
+            url: https://github.com/zqwei/Spike2Fluorescence_jGCaMP8
+      - title: A comparison of neuronal population dynamics measured with calcium imaging and electrophysiology
+        authors: Wei, Z., Lin, B. J., Chen, T. W., Daie, K., Svoboda, K., & Druckmann, S.
+        year: 2020
+        venue: PLOS Computational Biology, 16(9), e1008198
+        url: https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008198
+        resources:
+          - label: Early version
+            icon: archive
+            url: https://www.biorxiv.org/content/10.1101/840686v1
+          - label: Website
+            icon: chrome
+            url: http://im-phys.org
+          - label: Git#1
+            icon: github
+            url: https://github.com/zqwei/Ca-Imaging-Deconv-List
+          - label: Git#2
+            icon: github
+            url: https://github.com/zqwei/Neural-Recording-Methodology-Comparison
+          - label: Git-API
+            icon: github
+            url: https://github.com/zqwei/Im-phys-API
+          - label: Git-Website
+            icon: github
+            url: https://github.com/zqwei/Im-phys-org
+  - title: Books and reviews
+    items: []
+  - title: Multi-agents and statistical physics
+    items:
+      - title: The phase diagram and the pathway of phase transitions for traffic flow in a circular one-lane roadway
+        authors: Wei, Z., Hong, Y., & Wang, D.
+        year: 2009
+        venue: Physica A: Statistical Mechanics and its Applications, 388(8), 1665-1672
+        url: https://www.sciencedirect.com/science/article/pii/S0378437108010844
+      - title: Hysteresis phenomena of the intelligent driver model for traffic flow
+        authors: Dahui, W., Ziqiang, W., & Ying, F.
+        year: 2007
+        venue: Physical Review E, 76(1), 016105
+        url: https://journals.aps.org/pre/abstract/10.1103/PhysRevE.76.016105

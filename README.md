@@ -2,6 +2,23 @@
 
 This is my personal website using semantic-ui and jekyll.
 
+## Content maintenance
+
+Homepage content is stored in editable Jekyll data files so routine updates can be made without editing the section templates.
+
+- `/home/runner/work/zqwei.github.io/zqwei.github.io/_data/profile.yml` stores shared public profile metadata
+- `/home/runner/work/zqwei.github.io/zqwei.github.io/_data/research.yml` stores research portfolio cards
+- `/home/runner/work/zqwei.github.io/zqwei.github.io/_data/publications.yml` stores publication categories, entries, and optional resource links
+- `/home/runner/work/zqwei.github.io/zqwei.github.io/_data/teaching.yml` stores teaching categories and dated entries
+- `/home/runner/work/zqwei.github.io/zqwei.github.io/_data/links.yml` stores categorized links and data-sharing resources
+
+To update the site:
+
+1. Edit the relevant `_data/*.yml` file.
+2. Keep only public, non-sensitive information in those files.
+3. For publications, use the Google Scholar profile in `profile.yml` as the source of truth for additions and corrections.
+4. Rebuild with `bundle exec jekyll build` or preview with `bundle exec jekyll serve`.
+
 
 ## License
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br />The content of this work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.
