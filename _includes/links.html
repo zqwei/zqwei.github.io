@@ -11,7 +11,12 @@
           {% for item in category.items %}
           <div class="item">
             {% if item.title and item.url %}
-            <a href="{% if item.url contains '://' %}{{ item.url }}{% else %}{{ site.baseurl }}{{ item.url | remove_first: '/' }}{% endif %}">
+            {% if item.url contains '://' %}
+              {% assign link_url = item.url %}
+            {% else %}
+              {% capture link_url %}{{ site.baseurl }}{{ item.url | remove_first: '/' }}{% endcapture %}
+            {% endif %}
+            <a href="{{ link_url | strip }}">
               {{ item.title }}
             </a>{% if item.description %}: {{ item.description }}{% endif %}
             {% elsif item.description %}
