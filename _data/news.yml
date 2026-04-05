@@ -11,7 +11,6 @@ items:
     links:
       - label: Link
         url: https://www.incf.org/2023/matlab-community-toolbox-training-projects
-        icon: link-45deg
   - date: 2023-05-02
     title: "Faces of Cell (Cell Press)"
     links:
