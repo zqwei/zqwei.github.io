@@ -1,35 +1,28 @@
-<section class="content-section" id="teaching">
-  <div class="row g-4">
-    <div class="col-lg-3">
-      <div class="section-sidebar">
-        <h2 class="section-title mb-3">Teaching</h2>
-        <p class="section-subtitle">Teaching activities are maintained in reverse chronological order.</p>
-      </div>
-    </div>
-    <div class="col-lg-9">
+<div class="ui internally celled stackable grid">
+  <div class="four wide column">
+    <h2 class="ui header">Teaching</h2>
+  </div>
+  <div class="twelve wide column">
+    <div class="ui relaxed divided list">
       {% for category in site.data.teaching.categories %}
-      <article class="card content-card border-0 shadow-sm mb-4">
-        <div class="card-body">
-          <h3 class="h5 mb-3">{{ category.title }}</h3>
-          <ul class="list-unstyled mb-0">
-            {% for item in category.items %}
-            <li class="{% unless forloop.last %}mb-3{% endunless %}">
-              <span class="fw-semibold">{{ item.date }}</span>: {{ item.title }}{% if item.role %}, {{ item.role }}{% endif %}
-              {% if item.resources %}
-              <div class="d-flex flex-wrap gap-2 mt-2">
-                {% for resource in item.resources %}
-                <a href="{{ resource.url }}" class="resource-link badge rounded-pill text-bg-light text-decoration-none">
-                  {% include icon.html name=resource.icon classes='me-1' %}{{ resource.label }}
-                </a>
-                {% endfor %}
-              </div>
-              {% endif %}
-            </li>
-            {% endfor %}
-          </ul>
+      <div class="item">
+        <h3 class="ui black header">{{ category.title }}</h3>
+        <div class="ui bulleted list">
+          {% for item in category.items %}
+          <div class="item">
+            {{ item.date }}: {{ item.title }}{% if item.role %}, {{ item.role }}{% endif %}
+            {% if item.resources %}
+              {% for resource in item.resources %}
+              <a class="resource-link" href="{{ resource.url }}">
+                {% include icon.html name=resource.icon %} {{ resource.label }}
+              </a>
+              {% endfor %}
+            {% endif %}
+          </div>
+          {% endfor %}
         </div>
-      </article>
+      </div>
       {% endfor %}
     </div>
   </div>
-</section>
+</div>

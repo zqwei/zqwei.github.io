@@ -1,27 +1,24 @@
 {% assign news_items = site.data.news.items | sort: 'date' | reverse %}
-<ul class="list-unstyled news-list mb-0">
+<div class="ui bulleted list">
   {% for item in news_items limit: include.limit %}
-  <li class="news-item{% unless forloop.last %} border-bottom{% endunless %}">
-    <div class="small text-body-secondary fw-semibold">{{ item.date | date: "%Y/%m/%d" }}</div>
-    <div class="mt-1 fw-semibold">
-      {% if item.url %}
-      <a href="{{ item.url }}" class="text-decoration-none">{{ item.title }}</a>
-      {% else %}
-      {{ item.title }}
-      {% endif %}
-    </div>
-    {% if item.summary %}
-    <p class="mb-0 mt-2">{{ item.summary }}</p>
+  <div class="item">
+    [{{ item.date | date: "%Y/%m/%d" }}]
+    {% if item.url %}
+    <a href="{{ item.url }}">{{ item.title }}</a>
+    {% else %}
+    {{ item.title }}
     {% endif %}
     {% if item.links %}
-    <div class="d-flex flex-wrap gap-2 mt-2">
       {% for link in item.links %}
-      <a href="{{ link.url }}" class="resource-link badge rounded-pill text-bg-light text-decoration-none">
-        {% include icon.html name=link.icon classes='me-1' %}{{ link.label }}
+      <a class="resource-link" href="{{ link.url }}">
+        {% case link.icon %}
+          {% when 'twitter' %}{% include icon.html name='twitter square' classes='large' %}
+          {% when 'instagram' %}{% include icon.html name='instagram' classes='large' %}
+          {% else %}[{{ link.label }}]
+        {% endcase %}
       </a>
       {% endfor %}
-    </div>
     {% endif %}
-  </li>
+  </div>
   {% endfor %}
-</ul>
+</div>

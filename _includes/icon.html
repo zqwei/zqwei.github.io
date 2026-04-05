@@ -1,11 +1,16 @@
-{% assign icon_name = include.name | default: 'link-45deg' %}
+{% assign icon_name = include.name | default: 'linkify' %}
 {% case icon_name %}
-  {% when 'comments' %}{% assign icon_name = 'chat-square-text' %}
-  {% when 'chart bar' %}{% assign icon_name = 'bar-chart' %}
-  {% when 'chart-bar' %}{% assign icon_name = 'bar-chart' %}
-  {% when 'chrome' %}{% assign icon_name = 'globe' %}
+  {% when 'comments' %}{% assign icon_name = 'comments outline' %}
+  {% when 'chart bar' %}{% assign icon_name = 'chart bar' %}
+  {% when 'chart-bar' %}{% assign icon_name = 'chart bar' %}
+  {% when 'bar-chart' %}{% assign icon_name = 'chart bar' %}
+  {% when 'chrome' %}{% assign icon_name = 'chrome' %}
   {% when 'archive' %}{% assign icon_name = 'archive' %}
-  {% when 'twitter square' %}{% assign icon_name = 'twitter' %}
+  {% when 'twitter square' %}{% assign icon_name = 'twitter square' %}
+  {% when 'twitter' %}{% assign icon_name = 'twitter' %}
+  {% when 'instagram' %}{% assign icon_name = 'instagram' %}
   {% when 'envelope' %}{% assign icon_name = 'envelope' %}
+  {% when 'github' %}{% assign icon_name = 'github' %}
+  {% when 'link-45deg' %}{% assign icon_name = 'linkify' %}
 {% endcase %}
-<i class="bi bi-{{ icon_name }}{% if include.classes %} {{ include.classes }}{% endif %}" aria-hidden="true"></i>
+<i class="{% if include.classes %}{{ include.classes }} {% endif %}{{ icon_name }} icon" aria-hidden="true"></i>
