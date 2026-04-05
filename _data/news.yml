@@ -1,5 +1,12 @@
 # Keep entries in reverse chronological order (newest first).
 items:
+  - date: 2026-03-15
+    title: "[Cosyne 2026] Xueying Yang reveals that infection-induced sickness isn't just feeling tired—it’s a global brain reconfiguration."
+    links:
+      - label: youtube
+        url: https://youtu.be/jTO6T9xv0ZI?t=5051
+        icon: youtube
+  - date: 2023-05-02
   - date: 2023-05-09
     title: "Call for application of Matlab community toolbox training projects: EDLDS Modeling with MATLAB (Wei et al., 2019)"
     links:
