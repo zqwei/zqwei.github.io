@@ -1,0 +1,17 @@
+# Keep entries in reverse chronological order (newest first).
+items:
+  - date: 2023-05-09
+    title: "Call for application of Matlab community toolbox training projects: EDLDS Modeling with MATLAB (Wei et al., 2019)"
+    links:
+      - label: Link
+        url: https://www.incf.org/2023/matlab-community-toolbox-training-projects
+        icon: link-45deg
+  - date: 2023-05-02
+    title: "Faces of Cell (Cell Press)"
+    links:
+      - label: Twitter
+        url: https://twitter.com/CellCellPress/status/1653342294983200768?s=20
+        icon: twitter
+      - label: Instagram
+        url: https://www.instagram.com/p/CrlfTj-tRcZ/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==
+        icon: instagram

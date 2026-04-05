@@ -1,17 +1,27 @@
-<div class="ui bulleted list">
-  <div class="item">
-    [2023/05/02] Faces of Cell (Cell press)
-    <a href="https://twitter.com/CellCellPress/status/1653342294983200768?s=20">
-      <i class="large twitter square icon"></i>
-    </a>
-    <a href="https://www.instagram.com/p/CrlfTj-tRcZ/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==">
-      <i class="large instagram icon"></i>
-    </a>
-  </div>
-  <div class="item">
-    [2023/05/09] Call for application of Matlab community toolbox training projects: EDLDS Modeling with MATLAB (Wei et al., 2019)
-    <a href="https://www.incf.org/2023/matlab-community-toolbox-training-projects">
-      [Link]
-    </a>
-  </div>
-</div>
+{% assign news_items = site.data.news.items | sort: 'date' | reverse %}
+<ul class="list-unstyled news-list mb-0">
+  {% for item in news_items limit: include.limit %}
+  <li class="news-item{% unless forloop.last %} border-bottom{% endunless %}">
+    <div class="small text-body-secondary fw-semibold">{{ item.date | date: "%Y/%m/%d" }}</div>
+    <div class="mt-1 fw-semibold">
+      {% if item.url %}
+      <a href="{{ item.url }}" class="text-decoration-none">{{ item.title }}</a>
+      {% else %}
+      {{ item.title }}
+      {% endif %}
+    </div>
+    {% if item.summary %}
+    <p class="mb-0 mt-2">{{ item.summary }}</p>
+    {% endif %}
+    {% if item.links %}
+    <div class="d-flex flex-wrap gap-2 mt-2">
+      {% for link in item.links %}
+      <a href="{{ link.url }}" class="resource-link badge rounded-pill text-bg-light text-decoration-none">
+        {% include icon.html name=link.icon classes='me-1' %}{{ link.label }}
+      </a>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </li>
+  {% endfor %}
+</ul>
