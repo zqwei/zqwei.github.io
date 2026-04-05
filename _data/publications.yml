@@ -1,8 +1,11 @@
 categories:
   - title: Statistical neuroscience
     items:
-      - title: Sensorimotor processing in the zebrafish dorsal raphe nucleus
-        status: in preparation
+      - title: Voltage imaging reveals circuit computations in the raphe underlying serotonin-mediated motor vigor learning
+        authors: Kawashima, T., Wei, Z., Haruvi, R., Shainer, I., Narayan, S., Baier, H., & Ahrens, M. B.
+        year: 2025
+        venue: Neuron 113(16), 2692-2707.e8
+        url: https://www.cell.com/neuron/fulltext/S0896-6273(25)00364-2
       - title: Nonlinear evolution via spatially-dependent linear dynamics for electrophysiology and calcium data
         authors: Hernandez, D., Moretti, A. K., Saxena, S., Wei, Z., Cunningham, J., & Paninski, L.
         year: 2020
@@ -45,6 +48,11 @@ categories:
         url: https://openreview.net/forum?id=SJMO2iCct7
   - title: Computational neuroscience
     items:
+      - title: Dimensionality reduction of calcium-imaged neuronal population activity
+        authors: Koh, T. H., Bishop, W. E., Kawashima, T., Jeon, B. B., Srinivasan, R., Mu, Y., Wei, Z., et al.
+        year: 2023
+        venue: Nature Computational Science
+        url: https://www.nature.com/articles/s43588-022-00390-2
       - title: A brainstem integrator for self-location memory and positional homeostasis in zebrafish
         authors: Yang, E., Zwart, M. F., James, B., Rubinov, M., Wei, Z., et al.
         year: 2022
@@ -90,8 +98,23 @@ categories:
           - label: Journal club
             icon: comments
             url: http://www.jneurosci.org/content/33/2/385
+  - title: Internal and metabolic states
+    items:
+      - title: Astrocyte-induced internal state transitions reshape brainwide sensory, integrative, and motor computations
+        authors: Lim, J. X., Wei, Z., Narayan, S., Zhang, Y., Hasseman, J. P., et al.
+        year: 2026
+        venue: bioRxiv
+        url: https://www.biorxiv.org/content/10.64898/2026.02.05.704034v1.full.pdf
+      - title: A neuron-glia circuit anticipates hypoxia to regulate organismal oxygen use
+        authors: Zhang, R.*, Wei, Z.*, How, J. J., Nardin, M., Narayan, S., et al.
+        status: under revision
   - title: Methods and technologies
     items:
+      - title: Whole-brain, all-optical interrogation of neuronal dynamics underlying gut interoception in zebrafish
+        authors: Chen, W., James, B., Ruetten, V. M. S., Banala, S., Wei, Z., et al.
+        year: 2025
+        venue: bioRxiv
+        url: https://doi.org/10.1101/2025.03.26.645305
       - title: Fast and sensitive GCaMP calcium indicators for imaging neural populations
         authors: Zhang, Y., Rózsa, M., Liang, Y., Bushey, D., Wei, Z., et al.
         year: 2023
