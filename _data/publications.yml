@@ -6,6 +6,13 @@ categories:
         year: 2025
         venue: Neuron 113(16), 2692-2707.e8
         url: https://www.cell.com/neuron/fulltext/S0896-6273(25)00364-2
+        resources:
+          - label: Git#1
+            icon: github
+            url: https://github.com/zqwei/DRN_voltage_analysis
+          - label: Git#2
+            icon: github
+            url: https://github.com/zqwei/fish_processing
       - title: Nonlinear evolution via spatially-dependent linear dynamics for electrophysiology and calcium data
         authors: Hernandez, D., Moretti, A. K., Saxena, S., Wei, Z., Cunningham, J., & Paninski, L.
         year: 2020
