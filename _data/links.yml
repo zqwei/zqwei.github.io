@@ -5,7 +5,7 @@ categories:
         url: https://docs.google.com/forms/d/e/1FAIpQLSdZgaihYBtmGozmLf7IuwEZJTFtqHV1jV23qq0iJBk0OZutzQ/viewform?usp=sf_link
       - title: Ephys-ophys
         url: http://im-phys.org/
-        description: http://im-phys.org/
+        description: Electrophysiology and optical physiology comparison resource
   - title: Git Repos
     items:
       - title: Git TOC

@@ -6,11 +6,11 @@ This is my personal website using semantic-ui and jekyll.
 
 Homepage content is stored in editable Jekyll data files so routine updates can be made without editing the section templates.
 
-- `/home/runner/work/zqwei.github.io/zqwei.github.io/_data/profile.yml` stores shared public profile metadata
-- `/home/runner/work/zqwei.github.io/zqwei.github.io/_data/research.yml` stores research portfolio cards
-- `/home/runner/work/zqwei.github.io/zqwei.github.io/_data/publications.yml` stores publication categories, entries, and optional resource links
-- `/home/runner/work/zqwei.github.io/zqwei.github.io/_data/teaching.yml` stores teaching categories and dated entries
-- `/home/runner/work/zqwei.github.io/zqwei.github.io/_data/links.yml` stores categorized links and data-sharing resources
+- `_data/profile.yml` stores shared public profile metadata
+- `_data/research.yml` stores research portfolio cards
+- `_data/publications.yml` stores publication categories, entries, and optional resource links
+- `_data/teaching.yml` stores teaching categories and dated entries
+- `_data/links.yml` stores categorized links and data-sharing resources
 
 To update the site:
 

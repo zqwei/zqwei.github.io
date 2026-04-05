@@ -101,7 +101,7 @@ categories:
           - label: Early version
             icon: archive
             url: https://www.biorxiv.org/content/10.1101/2021.11.08.467793v2
-          - label: News & views forum
+          - label: News & Views Forum
             icon: comments
             url: https://www.nature.com/articles/d41586-023-00704-y
           - label: Git
