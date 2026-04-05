@@ -13,6 +13,10 @@ categories:
         url: /useful_repo_links.html
   - title: Data sharing
     items:
+      - description: Kawashima, T., Wei, Z., Haruvi, R., Shainer, I., Narayan, S., Baier, H., & Ahrens, M. B. (2025). Voltage imaging reveals circuit computations in the raphe underlying serotonin-mediated motor vigor learning. Mendeley Data.
+        resources:
+          - label: The detailed information is on the website
+            url: https://data.mendeley.com/datasets/3nn5t35j8s/1
       - description: 'Wei, Z., Lin, BJ., Chen, TW., Daie, K., Svoboda, K., Druckmann, S. (2020): Raw data for "A comparison of neuronal population dynamics measured with calcium imaging and electrophysiology". figshare. Dataset.'
         resources:
           - label: https://doi.org/10.6084/m9.figshare.12792587
@@ -27,12 +31,12 @@ categories:
         resources:
           - label: 'DOI: 10.6084/m9.figshare.7372898'
             url: https://figshare.com/articles/Simultaneous_extracellular_electrophysiology_data/7372898
-      - description: Kawashima, T., Wei, Z., Haruvi, R., Shainer, I., Narayan, S., Baier, H., & Ahrens, M. B. (2025). Voltage imaging reveals circuit computations in the raphe underlying serotonin-mediated motor vigor learning. Mendeley Data.
-        resources:
-          - label: The detailed information is on the website
-            url: https://data.mendeley.com/datasets/3nn5t35j8s/1
   - title: Methods and technologies
     items:
+      - title: Voltage/Calcium imaging processing pipeline.
+        url: https://doi.org/10.5281/zenodo.15293026
+      - title: "Analysis codes for 'Voltage Imaging Reveals Circuit Computations in the Raphe Underlying Serotonin-Mediated Motor Vigor Learning'."
+        url: https://doi.org/10.5281/zenodo.15293043
       - title: Calcium to spike model comparison
         url: https://github.com/zqwei/Ca-Imaging-Deconv-List
       - title: Epoch-Dependent Linear Dynamical Systems
@@ -40,7 +44,3 @@ categories:
         resources:
           - label: 'DOI:10.5281/zenodo.1403158'
             url: https://doi.org/10.5281/zenodo.1403158
-      - title: Voltage/Calcium imaging processing pipeline. Zenodo.
-        url: https://doi.org/10.5281/zenodo.15293026
-      - title: "Analysis codes for 'Voltage Imaging Reveals Circuit Computations in the Raphe Underlying Serotonin-Mediated Motor Vigor Learning'. Zenodo."
-        url: https://doi.org/10.5281/zenodo.15293043
