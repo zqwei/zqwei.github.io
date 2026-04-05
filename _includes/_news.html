@@ -11,11 +11,7 @@
     {% if item.links %}
       {% for link in item.links %}
       <a class="resource-link" href="{{ link.url }}">
-        {% case link.icon %}
-          {% when 'twitter' %}{% include icon.html name='twitter square' classes='large' %}
-          {% when 'instagram' %}{% include icon.html name='instagram' classes='large' %}
-          {% else %}[{{ link.label }}]
-        {% endcase %}
+        {% if link.icon %}{% include icon.html name=link.icon classes='large' %}{% else %}[{{ link.label }}]{% endif %}
       </a>
       {% endfor %}
     {% endif %}
