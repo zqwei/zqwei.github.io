@@ -6,7 +6,7 @@ categories:
         authors: Zhang, R.*, Wei, Z.*, How, J. J., Nardin, M., Narayan, S., et al.
         status: under revision
       - title: Astrocyte-induced internal state transitions reshape brainwide sensory, integrative, and motor computations
-        authors: Lim, J. X., Wei, Z., Narayan, S., Zhang, Y., Hasseman, J. P., et al.
+        authors: Lim, J. X.*, Wei, Z.*, Narayan, S., Zhang, Y., Hasseman, J. P., et al.
         year: 2026
         venue: bioRxiv
         url: https://www.biorxiv.org/content/10.64898/2026.02.05.704034v1.full.pdf
@@ -60,7 +60,7 @@ categories:
   - title: Computational neuroscience
     items:
       - title: Voltage imaging reveals circuit computations in the raphe underlying serotonin-mediated motor vigor learning
-        authors: Kawashima, T., Wei, Z., Haruvi, R., Shainer, I., Narayan, S., Baier, H., & Ahrens, M. B.
+        authors: Kawashima, T.*#, Wei, Z.*#, Haruvi, R., Shainer, I., Narayan, S., Baier, H., & Ahrens, M. B.#
         year: 2025
         venue: Neuron 113(16), 2692-2707.e8
         url: https://www.cell.com/neuron/fulltext/S0896-6273(25)00364-2
