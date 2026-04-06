@@ -16,8 +16,13 @@
         {% for publication in category.items %}
         <li class="mb-2">
           &#8226;
+          {% if publication.authors %}
+            {% assign bold_authors = publication.authors | replace: 'Wei, Z', '<strong>Wei, Z</strong>' %}
+          {% else %}
+            {% assign bold_authors = '' %}
+          {% endif %}
           {% capture citation %}
-            {% if publication.authors %}{{ publication.authors }}{% endif %}{% if publication.year %} ({{ publication.year }}){% endif %}{% if publication.authors or publication.year %}.{% endif %}
+            {% if publication.authors %}{{ bold_authors }}{% endif %}{% if publication.year %} ({{ publication.year }}){% endif %}{% if publication.authors or publication.year %}.{% endif %}
             {{ publication.title }}{% if publication.status %} ({{ publication.status }}){% endif %}.{% if publication.venue %} {{ publication.venue }}.{% endif %}
           {% endcapture %}
           {% assign citation = citation | strip %}
