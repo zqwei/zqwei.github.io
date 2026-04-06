@@ -17,7 +17,7 @@
         <li class="mb-2">
           &#8226;
           {% if publication.authors %}
-            {% assign bold_authors = publication.authors | replace: 'Wei, Z.', '<strong>Wei, Z.</strong>' %}
+            {% assign bold_authors = publication.authors | replace: 'Wei, Z.', '<strong>Wei, Z.</strong>' | replace: 'Ziqiang, W.', '<strong>Ziqiang, W.</strong>' %}
           {% else %}
             {% assign bold_authors = '' %}
           {% endif %}
