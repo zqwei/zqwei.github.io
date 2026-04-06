@@ -98,6 +98,11 @@ p {
   color: var(--site-text);
 }
 
+.hero-section .nav-link.active {
+  color: var(--site-text) !important;
+  text-decoration: underline;
+}
+
 .hero-section .nav-link:hover,
 .hero-section .nav-link:focus {
   color: var(--site-accent);
@@ -150,7 +155,7 @@ p {
 /* ── Research panel cards — hover shadow, flat by default ── */
 
 .research-panel {
-  background: var(--site-surface);
+  background: var(--site-bg);
   border-radius: 0.5rem;
   border: 1px solid var(--site-border);
   box-shadow: none;
@@ -169,7 +174,7 @@ p {
   width: 100%;
   max-height: 220px;
   object-fit: contain;
-  background: #ffffff;
+  background: var(--site-bg);
   border: 1px solid var(--site-border);
   border-radius: 0.25rem;
   padding: 1rem;

@@ -10,9 +10,6 @@ linkedin_url: https://www.linkedin.com/in/ziqiang-wei-8566a167/
 email_url: "#"
 email_text: weiz (at) janelia (dot) hhmi (dot) org
 footer_links:
-  - icon: bar-chart
-    label: google scholar profile
-    url: https://scholar.google.com/citations?user=5XIozvEAAAAJ&hl=en
   - icon: github
     label: github
     url: https://github.com/zqwei
