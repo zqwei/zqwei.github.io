@@ -7,10 +7,10 @@ panels:
   - type: image
     title: State-space models
     image: /imgs/State_space.svg
-  - type: image
+  - type: video
     title: Methods and Technologies
-    image: /imgs/Methods_Tech.svg
-    url: http://im-phys.org/
+    video: https://www.cell.com/cms/10.1016/j.neuron.2025.05.017/attachment/5ff675f3-5bd0-4c1e-a92b-eed2444ef2be/mmc2.mp4
+    url: https://www.cell.com/neuron/fulltext/S0896-6273(25)00364-2
   - type: image
     title: Optimal control of adaptive behavior
     image: /imgs/Hypoxia.svg

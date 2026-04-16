@@ -15,7 +15,19 @@
           {% if panel.summary %}
           <p>{{ panel.summary }}</p>
           {% endif %}
-          {% if panel.url %}
+          {% if panel.type == 'video' and panel.video %}
+            {% if panel.url %}
+            <a href="{{ panel.url }}">
+              <video class="research-image" autoplay loop muted playsinline>
+                <source src="{{ panel.video }}" type="video/mp4">
+              </video>
+            </a>
+            {% else %}
+            <video class="research-image" autoplay loop muted playsinline>
+              <source src="{{ panel.video }}" type="video/mp4">
+            </video>
+            {% endif %}
+          {% elsif panel.url %}
           <a href="{{ panel.url }}">
             <img class="research-image" src="{{ panel.image }}" alt="{{ panel.title }}">
           </a>
