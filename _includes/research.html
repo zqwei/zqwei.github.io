@@ -18,13 +18,13 @@
           {% if panel.type == 'video' and panel.video %}
             {% if panel.url %}
             <a href="{{ panel.url }}">
-              <video class="research-image" autoplay loop muted playsinline>
+              <video class="research-image" autoplay loop muted playsinline controls>
                 <source src="{{ panel.video }}" type="video/mp4">
                 {{ panel.title }}
               </video>
             </a>
             {% else %}
-            <video class="research-image" autoplay loop muted playsinline>
+            <video class="research-image" autoplay loop muted playsinline controls>
               <source src="{{ panel.video }}" type="video/mp4">
               {{ panel.title }}
             </video>
