@@ -14,6 +14,7 @@ panels:
   - type: image
     title: Optimal control of adaptive behavior
     image: /imgs/Hypoxia.svg
+    media_class: research-image-optimal-control
     url: https://www.biorxiv.org/content/10.64898/2026.04.10.717666v1
   - type: image
     title: Circuit computation in spiking networks

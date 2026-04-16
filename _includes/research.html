@@ -18,23 +18,23 @@
           {% if panel.type == 'video' and panel.video %}
             {% if panel.url %}
             <a href="{{ panel.url }}">
-              <video class="research-image" autoplay loop muted playsinline controls>
+              <video class="research-image{% if panel.media_class %} {{ panel.media_class }}{% endif %}" autoplay loop muted playsinline controls>
                 <source src="{{ panel.video }}" type="video/mp4">
                 {{ panel.title }}
               </video>
             </a>
             {% else %}
-            <video class="research-image" autoplay loop muted playsinline controls>
+            <video class="research-image{% if panel.media_class %} {{ panel.media_class }}{% endif %}" autoplay loop muted playsinline controls>
               <source src="{{ panel.video }}" type="video/mp4">
               {{ panel.title }}
             </video>
             {% endif %}
           {% elsif panel.url %}
           <a href="{{ panel.url }}">
-            <img class="research-image" src="{{ panel.image }}" alt="{{ panel.title }}">
+            <img class="research-image{% if panel.media_class %} {{ panel.media_class }}{% endif %}" src="{{ panel.image }}" alt="{{ panel.title }}">
           </a>
           {% elsif panel.image %}
-          <img class="research-image" src="{{ panel.image }}" alt="{{ panel.title }}">
+          <img class="research-image{% if panel.media_class %} {{ panel.media_class }}{% endif %}" src="{{ panel.image }}" alt="{{ panel.title }}">
           {% endif %}
         {% endif %}
       </div>
