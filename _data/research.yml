@@ -10,12 +10,10 @@ panels:
   - type: video
     title: Methods and Technologies
     video: https://www.cell.com/cms/10.1016/j.neuron.2025.05.017/attachment/5ff675f3-5bd0-4c1e-a92b-eed2444ef2be/mmc2.mp4
-    media_class: research-media-frame-95
     url: https://www.cell.com/neuron/fulltext/S0896-6273(25)00364-2
   - type: image
     title: Optimal control of adaptive behavior
     image: /imgs/Hypoxia.svg
-    media_class: "research-image-optimal-control research-media-frame-95"
     url: https://www.biorxiv.org/content/10.64898/2026.04.10.717666v1
   - type: image
     title: Circuit computation in spiking networks
