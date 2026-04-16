@@ -22,5 +22,5 @@ panels:
   - type: news
     title: News
     source: news
-    limit: 2
+    limit: 3
     url: /news.html
