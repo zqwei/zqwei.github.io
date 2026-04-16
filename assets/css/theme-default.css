@@ -131,6 +131,12 @@ p {
   padding: 1rem;
 }
 
+.research-media-frame-95 {
+  height: 95%;
+  max-height: none;
+  min-height: 300px;
+}
+
 /* ── News list ── */
 
 .news-item {
