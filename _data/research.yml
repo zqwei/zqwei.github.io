@@ -13,7 +13,7 @@ panels:
     url: http://im-phys.org/
   - type: image
     title: Optimal control of adaptive behavior
-    image: /imgs/Large_scale_DB.svg
+    image: /imgs/Hypoxia.svg
   - type: image
     title: Circuit computation in spiking networks
     image: /imgs/Spike_neural_network.png
