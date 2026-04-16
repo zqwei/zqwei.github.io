@@ -1,6 +1,9 @@
 {% assign news_items = site.data.news.items | sort: 'date' | reverse %}
+{% assign include_ids = include.include_ids %}
+{% assign shown = 0 %}
 <ul class="list-unstyled news-list">
-  {% for item in news_items limit: include.limit %}
+  {% for item in news_items %}
+  {% if include_ids == nil or include_ids == empty or include_ids contains item.id %}
   <li class="news-item border-bottom">
     [{{ item.date | date: "%Y/%m/%d" }}]
     {% if item.url %}
@@ -16,5 +19,10 @@
       {% endfor %}
     {% endif %}
   </li>
+  {% assign shown = shown | plus: 1 %}
+  {% if include.limit and shown >= include.limit %}
+    {% break %}
+  {% endif %}
+  {% endif %}
   {% endfor %}
 </ul>

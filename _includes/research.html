@@ -7,7 +7,7 @@
       <div class="card-body">
         <h3>{{ panel.title }}</h3>
         {% if panel.type == 'news' %}
-          {% include _news.html limit=panel.limit %}
+          {% include _news.html limit=panel.limit include_ids=panel.include %}
           {% if panel.url %}
           <a href="{{ panel.url | relative_url }}">[View all news]</a>
           {% endif %}
