@@ -5,20 +5,20 @@ panels:
     image: /imgs/Geometry_NeuralDynamics.svg
     url: https://www.biorxiv.org/content/early/2018/07/25/376830
   - type: image
-    title: State-space models
+    title: State-dependent latent dynamics
     image: /imgs/State_space.svg
   - type: image
     title: Methods and Technologies
     image: /imgs/Methods_Tech.svg
     url: http://im-phys.org/
   - type: image
-    title: Large-scale Neural DB
+    title: Optimal control of adaptive behavior
     image: /imgs/Large_scale_DB.svg
   - type: image
-    title: Spike neuronal network
+    title: Circuit computation in spiking networks
     image: /imgs/Spike_neural_network.png
   - type: news
     title: News
     source: news
-    limit: 5
+    limit: 3
     url: /news.html
