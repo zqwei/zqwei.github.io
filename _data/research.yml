@@ -1,11 +1,11 @@
 # Keep panels in homepage display order.
 panels:
   - type: image
-    title: Geometry of neural dynamics
+    title: Geometry of brain dynamics
     image: /imgs/Geometry_NeuralDynamics.svg
     url: https://www.biorxiv.org/content/early/2018/07/25/376830
   - type: image
-    title: State-dependent latent dynamics
+    title: State-space models
     image: /imgs/State_space.svg
   - type: image
     title: Methods and Technologies
@@ -14,11 +14,12 @@ panels:
   - type: image
     title: Optimal control of adaptive behavior
     image: /imgs/Hypoxia.svg
+    url: https://www.biorxiv.org/content/10.64898/2026.04.10.717666v1
   - type: image
     title: Circuit computation in spiking networks
     image: /imgs/Spike_neural_network.png
   - type: news
     title: News
     source: news
-    limit: 3
+    limit: 2
     url: /news.html
