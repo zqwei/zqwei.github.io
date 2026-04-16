@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 135.8 98.4">
+  <!-- Generator: Adobe Illustrator 30.3.0, SVG Export Plug-In . SVG Version: 2.1.3 Build 182)  -->
+  <defs>
+    <style>
+      .st0, .st1, .st2, .st3, .st4, .st5, .st6, .st7, .st8, .st9 {
+        fill: none;
+      }
+
+      .st0, .st1, .st2, .st3, .st10 {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .st0, .st1, .st11, .st12, .st7, .st10, .st13, .st14, .st9, .st15, .st16, .st17 {
+        stroke-width: .7px;
+      }
+
+      .st0, .st4, .st11, .st5, .st12, .st6, .st7, .st8, .st13, .st15, .st17 {
+        stroke: #231f20;
+      }
+
+      .st1 {
+        stroke: #404d5e;
+      }
+
+      .st2 {
+        stroke: #4c555d;
+      }
+
+      .st2, .st3, .st4, .st5, .st6 {
+        stroke-width: .3px;
+      }
+
+      .st3 {
+        stroke: #4c565d;
+      }
+
+      .st18, .st19, .st20, .st17 {
+        fill: #00a651;
+      }
+
+      .st4 {
+        stroke-dasharray: 2.6 2.6;
+      }
+
+      .st4, .st11, .st5, .st12, .st6, .st7, .st8, .st13, .st14, .st9, .st15, .st16, .st17 {
+        stroke-miterlimit: 10;
+      }
+
+      .st21 {
+        fill: #6d6e71;
+      }
+
+      .st22 {
+        fill: #231f20;
+      }
+
+      .st23 {
+        font-size: 6.1px;
+      }
+
+      .st23, .st24, .st19, .st25 {
+        font-family: Helvetica, Helvetica;
+      }
+
+      .st24, .st19, .st25 {
+        font-size: 6px;
+      }
+
+      .st26, .st10 {
+        fill: #fcbb77;
+      }
+
+      .st11 {
+        fill: #39b54a;
+      }
+
+      .st20, .st27, .st28 {
+        opacity: .7;
+      }
+
+      .st5 {
+        stroke-dasharray: 2 2;
+      }
+
+      .st29 {
+        opacity: .5;
+      }
+
+      .st29, .st30, .st14 {
+        fill: #fff;
+      }
+
+      .st12 {
+        fill: #8dc63f;
+      }
+
+      .st8 {
+        stroke-width: 1.1px;
+      }
+
+      .st10 {
+        stroke: #414e5d;
+      }
+
+      .st31 {
+        font-family: MyriadPro-Regular, 'Myriad Pro';
+        font-size: 7.3px;
+      }
+
+      .st13 {
+        fill: #00a79d;
+      }
+
+      .st27, .st25 {
+        fill: #be1e2d;
+      }
+
+      .st14, .st16 {
+        stroke: #000;
+      }
+
+      .st9 {
+        stroke: #00a651;
+      }
+
+      .st32 {
+        fill: #949caf;
+      }
+
+      .st15 {
+        fill: #52a79d;
+      }
+
+      .st16 {
+        fill: #e2e2e2;
+      }
+    </style>
+  </defs>
+  <g id="Generative_Object">
+    <g>
+      <path class="st32" d="M40.6,16.4c0,1.1-.1,2.1-.3,3.2s-.7,3.7-.6,4.2,2.5,2,2.9,2.6v5.9c-.4.9-1.4.9-1.9.1s0-4.1-.1-5.1c-.7-.7-1.5-1.3-2.3-1.9s0,0,0,0c0,0,0,0,0,0v.2c-.6,2.1-1.9,5.3-3.3,6.9s-2.2.2-1.8-.9,1.8-2.9,2.4-4.1.6-2.3.9-3.3v-.2c-.1-.2-.2-.2-.3-.6-.3-.9.6-4,.6-5.2s0-.2,0-.2c.2-.1,1.3-.8,1.3-.9.1-.4-.7-1-.7-1.4,1.4-.9,2.4-1,3.3.6h0s0,0,0,.1Z"/>
+      <path class="st26" d="M37.3,15.7c0,.4.9,1,.7,1.4s-1.1.8-1.3.9c-.3.2-1.2.8-1.4,1.1-.4.6-.5,2.8-.9,3.5s-1.6.6-1.6-.3.9-3.9,1-4.1c.4-.6,2.7-2,3.4-2.4Z"/>
+      <path class="st26" d="M40.4,19.6c.1-1.1.2-2.1.3-3.2h0c.3.5,1.1,2.5,1.5,2.8s2.2.6,2.8,1c.8.5.4,1.7-.6,1.5s-3.1-1-3.8-1.8-.1-.3-.2-.2Z"/>
+      <path class="st10" d="M39.6,10.1s0,0,.1,0c2.7,0,2.7,4,0,4.1s-2.8-3.9-.2-4.1Z"/>
+    </g>
+    <g>
+      <path class="st1" d="M38,17.1c0,0-1.1.8-1.3.9-.3.2-1.2.8-1.4,1.1-.4.6-.5,2.8-.9,3.5s-1.6.6-1.6-.3.9-3.9,1-4.1c.4-.6,2.7-2,3.4-2.4,1.4-.9,2.4-1,3.3.6s0,0,0,.1c.3.6,1.1,2.5,1.5,2.8s2.2.6,2.8,1c.8.5.4,1.7-.6,1.5s-3.1-1-3.8-1.8"/>
+      <path class="st1" d="M36.5,24.2c-.4,1-.5,2.3-.9,3.3s-2,2.9-2.4,4.1,1,1.9,1.8.9c1.3-1.6,2.7-4.8,3.2-6.9"/>
+      <path class="st1" d="M40.6,16.3s0,0,0,.1c0,1.1-.1,2.1-.3,3.2s-.7,3.7-.6,4.2,2.5,2,2.9,2.6v5.9c-.4.9-1.4.9-1.9.1s0-4.1-.1-5.1c-.7-.7-1.5-1.3-2.3-1.9s0,0,0,0c-.5-.4-1.2-.9-1.7-1.4s-.3-.2-.4-.6c-.3-.9.6-4,.6-5.2"/>
+    </g>
+  </g>
+  <g>
+    <g id="Generative_Object1" data-name="Generative_Object">
+      <path class="st12" d="M20.6,34.1c1.4,0,2.6,1.1,2.4,2.4,1.4.3,2.2,1.5,1.8,2.7,1.9.7,1.9,3.2,0,3.9-.8.3-3,.1-4,.1s-3.3.1-4.1-.2c-1.5-.5-1.9-2.5-.7-3.5s.7-.4.7-.4c0,0-.1-.3-.1-.4,0-1.2.6-2,1.9-2.3-.2-1.2.9-2.3,2.2-2.3Z"/>
+      <g>
+        <line class="st0" x1="17.6" y1="47.6" x2="23.7" y2="47.6"/>
+        <polyline class="st0" points="22.5 41 20.7 42.6 18.8 41"/>
+        <path class="st0" d="M20.7,40.1c0,1,0,2,0,3.1s0,2.8,0,4.2"/>
+      </g>
+    </g>
+    <g id="Generative_Object2" data-name="Generative_Object">
+      <path class="st13" d="M23.6,40.1c1.4,0,2.6,1.1,2.4,2.4,1.4.3,2.2,1.5,1.8,2.7,1.9.7,1.9,3.2,0,3.9s-3,.1-4,.1-3.3.1-4.1-.2c-1.5-.5-1.9-2.5-.7-3.5s.7-.4.7-.4c0,0-.1-.3-.1-.4,0-1.2.6-2,1.9-2.3-.2-1.2.9-2.3,2.2-2.3Z"/>
+      <g>
+        <line class="st0" x1="20.6" y1="53.6" x2="26.7" y2="53.6"/>
+        <polyline class="st0" points="25.5 47 23.7 48.6 21.9 47"/>
+        <path class="st0" d="M23.7,46.1c0,1,0,2,0,3.1s0,2.8,0,4.2"/>
+      </g>
+    </g>
+    <g id="Generative_Object3" data-name="Generative_Object">
+      <path class="st15" d="M29.1,35c1.4,0,2.6,1.1,2.4,2.4,1.4.3,2.2,1.5,1.8,2.7,1.9.7,1.9,3.2,0,3.9s-3,.1-4,.1-3.3.1-4.1-.2c-1.5-.5-1.9-2.5-.7-3.5s.7-.4.7-.4c0,0-.1-.3-.1-.4,0-1.2.6-2,1.9-2.3-.2-1.2.9-2.3,2.2-2.3Z"/>
+      <g>
+        <line class="st0" x1="26.1" y1="48.5" x2="32.2" y2="48.5"/>
+        <polyline class="st0" points="31 41.9 29.2 43.5 27.4 41.9"/>
+        <path class="st0" d="M29.2,41.1c0,1,0,2,0,3.1s0,2.8,0,4.2"/>
+      </g>
+    </g>
+    <g id="Generative_Object4" data-name="Generative_Object">
+      <path class="st17" d="M17.7,42.2c1.4,0,2.6,1.1,2.4,2.4,1.4.3,2.2,1.5,1.8,2.7,1.9.7,1.9,3.2,0,3.9s-3,.1-4,.1-3.3.1-4.1-.2c-1.5-.5-1.9-2.5-.7-3.5s.7-.4.7-.4c0,0-.1-.3-.1-.4,0-1.2.6-2,1.9-2.3-.2-1.2.9-2.3,2.2-2.3Z"/>
+      <g>
+        <line class="st0" x1="14.7" y1="55.6" x2="20.8" y2="55.6"/>
+        <polyline class="st0" points="19.6 49 17.8 50.6 16 49"/>
+        <path class="st0" d="M17.8,48.2c0,1,0,2,0,3.1s0,2.8,0,4.2"/>
+      </g>
+    </g>
+    <g id="Generative_Object5" data-name="Generative_Object">
+      <path class="st11" d="M29.1,43.1c1.4,0,2.6,1.1,2.4,2.4,1.4.3,2.2,1.5,1.8,2.7,1.9.7,1.9,3.2,0,3.9s-3,.1-4,.1-3.3.1-4.1-.2c-1.5-.5-1.9-2.5-.7-3.5s.7-.4.7-.4c0,0-.1-.3-.1-.4,0-1.2.6-2,1.9-2.3-.2-1.2.9-2.3,2.2-2.3Z"/>
+      <g>
+        <line class="st0" x1="26.1" y1="56.5" x2="32.2" y2="56.5"/>
+        <polyline class="st0" points="31 50 29.2 51.5 27.3 49.9"/>
+        <path class="st0" d="M29.2,49.1c0,1,0,2,0,3.1s0,2.8,0,4.2"/>
+      </g>
+    </g>
+  </g>
+  <g>
+    <ellipse class="st27" cx="109.7" cy="46.2" rx="5.2" ry="3.8" transform="translate(34.9 138.9) rotate(-74)"/>
+    <ellipse class="st20" cx="114.3" cy="59.1" rx="5.2" ry="3.8" transform="translate(25.9 152.6) rotate(-74)"/>
+    <ellipse class="st20" cx="117.3" cy="49.3" rx="5.2" ry="3.8" transform="translate(37.5 148.4) rotate(-74)"/>
+    <ellipse class="st20" cx="124.6" cy="51.5" rx="5.2" ry="3.8" transform="translate(40.6 157) rotate(-74)"/>
+    <g class="st28">
+      <g>
+        <path class="st9" d="M118.3,44.4c-.9-1.3-2.2-1.9-3.5-1.9"/>
+        <path class="st18" d="M112.8,43c.8-.6,1.8-1.5,2.4-2.3v1.7c-.1,0,.9,1.4.9,1.4-.9-.4-2.2-.7-3.2-.8Z"/>
+      </g>
+    </g>
+    <g class="st28">
+      <g>
+        <path class="st9" d="M112.7,57.4c-1.3-1.8-2.2-3.6-2.5-4.9"/>
+        <path class="st18" d="M110.3,50.5c.3,1,.9,2.2,1.5,3l-1.6-.6-1.6.5c.7-.7,1.3-1.9,1.7-2.9Z"/>
+      </g>
+    </g>
+    <g class="st28">
+      <g>
+        <path class="st9" d="M124.8,46.4c-.6-3.5-5.5-5.8-11.4-5.4"/>
+        <path class="st18" d="M111.4,41.3c.9-.5,2.1-1.2,2.7-1.9l-.4,1.7.8,1.6c-.8-.6-2.1-1.1-3.1-1.3Z"/>
+      </g>
+    </g>
+  </g>
+  <g>
+    <g id="Generative_Object6" data-name="Generative_Object">
+      <g>
+        <path class="st29" d="M101.8,51.7c-2.2.8-8.5,1.3-11.1,1.5s0,0,0,0c-2.8.3-6.8,1.6-6.7-2.7h-.2c-4.3,1.4-6.8-3.9-2.9-6.2h0c.1-2.7,2.6-4.1,5-3.6h0s0,0,0,0c1.6-1.5,3.5-2,5.4-.8h0c2-.9,4.1-.4,5.3,1.5v.2c2.2-.5,4.6,2,4,4h.2c2.5.6,3.4,5,.9,6s0,0,0,0Z"/>
+        <path class="st29" d="M101.8,51.7s0,0,0,0v.3c0,2.7-2.9,4.1-5.2,3.1h-.3s0,0,0,0c0,0,0,0,0,0,.3.8,1.3,3.3-.3,3.4s-1.5-1.5-2.1-2c-1.1-1-2.5-1.5-3.1-3v-.2c0,0-.1,0-.1,0,0,0,0,0,0,0,2.6-.3,8.9-.8,11.1-1.5Z"/>
+      </g>
+      <g>
+        <path class="st0" d="M95,45.4c.2,4.7-6,1.1-6.5,5.4"/>
+        <path class="st0" d="M95.2,52.9c.3.7.9,1.4,1.2,2.1s0,0,0,0c.3.8,1.3,3.3-.3,3.4s-1.5-1.5-2.1-2c-1.1-1-2.5-1.5-3.1-3"/>
+        <path class="st0" d="M88.6,44.6c0,.6,0,1.4-.5,2-1.2,1.7-4.2.8-4.2,3.9,0,4.3,4,3,6.7,2.7s0,0,0,0c2.6-.3,8.9-.8,11.1-1.5s0,0,0,0c2.5-1,1.6-5.4-.9-5.9"/>
+        <path class="st0" d="M96.7,55.1c2.4,1,5.1-.4,5.2-3.1"/>
+        <path class="st22" d="M95.2,42.3c2.5-3.1,7.6,1.1,5.5,4.2-.6,1-1.7,1.6-2.8,1.6-.2,0-.4-.1-.4-.3,0-.2.1-.3.3-.3,1.9,0,3.3-2.1,2.2-3.7-.8-1.6-3.1-2.5-4.4-.9-.2.2-.5.6-.7.6-.5-.1,0-.7.2-1h0Z"/>
+        <path class="st0" d="M80.9,44.2h0c.1-2.7,2.6-4.1,5-3.6h0"/>
+        <path class="st0" d="M85.9,40.7c-.6,1.2-.5,2.3.3,3.4"/>
+        <path class="st0" d="M80.9,44.2c-3.9,2.3-1.5,7.6,2.9,6.3"/>
+        <path class="st0" d="M91.5,39.9h0c-1.9-1.2-3.9-.7-5.4.8h0"/>
+        <line class="st0" x1="80.9" y1="44.2" x2="83" y2="45.7"/>
+        <path class="st0" d="M96.8,41.4c-1.2-1.9-3.3-2.5-5.3-1.5"/>
+        <path class="st0" d="M91.5,39.9c-1.1,1-.9,2.5,0,3.6"/>
+      </g>
+    </g>
+    <ellipse class="st27" cx="92.7" cy="45" rx="2.5" ry="1.8" transform="translate(-9.4 58.9) rotate(-33.7)"/>
+    <ellipse class="st20" cx="90" cy="50.8" rx="2.5" ry="1.8" transform="translate(-13.1 58.4) rotate(-33.7)"/>
+    <ellipse class="st20" cx="94.1" cy="47.5" rx="2.5" ry="1.8" transform="translate(-10.6 60.1) rotate(-33.7)"/>
+    <ellipse class="st20" cx="96.1" cy="50.9" rx="2.5" ry="1.8" transform="translate(-12.1 61.8) rotate(-33.7)"/>
+  </g>
+  <g id="Generative_Object7" data-name="Generative_Object">
+    <g>
+      <path class="st21" d="M39.3,71.5c-1.1-.1-5.8-.1-6.7.2-1.3.5-2.3,1.8-2.5,3.2s-.2,4.3,0,5.2,1.7.7,2.4.7v-4.5c.1-.3.6-.4.7,0v4.5h6.1v-4.5c.1-.4.6-.4.7,0v4.5c.7,0,2.3.3,2.4-.6s0-4.5,0-5.5c-.2-1.6-1.6-3.1-3.2-3.2Z"/>
+      <path class="st21" d="M36.7,63.6c-5-.4-5.2,6.8-.6,7s5.1-6.6.6-7Z"/>
+    </g>
+    <g>
+      <line class="st3" x1="29.6" y1="69.2" x2="31.4" y2="69.2"/>
+      <line class="st2" x1="31.3" y1="68" x2="28.9" y2="68"/>
+      <line class="st3" x1="29.6" y1="66.8" x2="31.3" y2="66.8"/>
+    </g>
+  </g>
+  <g>
+    <path class="st8" d="M47,25.3c1.7-.7,8.4-3.1,17.9-1.2,9.8,2,16.4,7.5,19.8,11.1"/>
+    <polygon class="st22" points="81.9 36.5 87.5 38.5 86.4 32.6 81.9 36.5"/>
+  </g>
+  <g>
+    <path class="st8" d="M43.5,72c1.6,1.5,9.6,4.7,19.2,2.5,11.6-2.6,21.1-10.5,25.7-14.9"/>
+    <polygon class="st22" points="89.8 62.3 91.3 56.5 85.5 58.1 89.8 62.3"/>
+  </g>
+  <g>
+    <rect class="st16" x="56.6" y="17.8" width="18.4" height="14.8" rx="5.3" ry="5.3"/>
+    <g>
+      <path class="st22" d="M69.1,25.1v4.7c0,.4-.6.7-1.3.7h0c-.7,0-1.3-.3-1.3-.7v-4.7"/>
+      <path class="st30" d="M69.1,25.1v-4.5c0-.4-.6-.7-1.3-.7h0c-.7,0-1.3.3-1.3.7v4.5"/>
+      <rect class="st7" x="66.5" y="19.7" width="2.6" height="10.9" rx="1.3" ry="1.3"/>
+      <polyline class="st14" points="71.8 21.9 72.8 21.9 72.8 26.3 73.6 26.3 71.8 29 70.1 26.3 70.9 26.3 70.9 21.9 71.8 21.9"/>
+    </g>
+    <text class="st31" transform="translate(57.5 27.3)"><tspan x="0" y="0">O2</tspan></text>
+  </g>
+  <g>
+    <rect class="st16" x="56.6" y="63.9" width="18.4" height="14.8" rx="5.3" ry="5.3"/>
+    <g>
+      <path class="st22" d="M69,68.1v7.5c0,.6-.6,1.2-1.3,1.2h0c-.7,0-1.3-.5-1.3-1.2v-7.5"/>
+      <polyline class="st14" points="71.8 75.2 70.8 75.2 70.8 70.8 70 70.8 71.8 68.1 73.5 70.8 72.7 70.8 72.7 75.2 71.8 75.2"/>
+      <path class="st30" d="M69,68.1v-1.3c0-.2-.6-.8-1.3-.8h0c-.7,0-1.3.6-1.3.8v1.3"/>
+      <rect class="st7" x="66.5" y="65.9" width="2.6" height="10.9" rx="1.3" ry="1.3"/>
+    </g>
+    <text class="st31" transform="translate(57.5 73.5)"><tspan x="0" y="0">O2</tspan></text>
+  </g>
+  <g>
+    <line class="st6" x1="98.2" y1="40.5" x2="99.1" y2="40"/>
+    <line class="st5" x1="100.9" y1="39.2" x2="103.6" y2="38"/>
+    <line class="st6" x1="104.4" y1="37.6" x2="105.4" y2="37.1"/>
+  </g>
+  <g>
+    <line class="st6" x1="98.2" y1="56.6" x2="98.9" y2="57.3"/>
+    <line class="st4" x1="100.8" y1="59.1" x2="103.7" y2="61.8"/>
+    <line class="st6" x1="104.6" y1="62.7" x2="105.4" y2="63.4"/>
+  </g>
+  <g>
+    <path class="st8" d="M93.8,37.6c-.2-1.3-.1-13.6-12-18.7-9.9-4.2-24-10.2-33-3.9"/>
+    <polygon class="st22" points="47.5 12.3 45.7 18 51.5 16.7 47.5 12.3"/>
+  </g>
+  <g>
+    <path class="st8" d="M94,60.4c0,1-1.3,9.4-14,16.5-9.6,5.4-22.4,7.7-31.8,3.3"/>
+    <polygon class="st22" points="50.5 78 44.6 78 47.6 83.2 50.5 78"/>
+  </g>
+  <text class="st24" transform="translate(6 61.3)"><tspan x="0" y="0">Environmental [O</tspan></text>
+  <text class="st24" transform="translate(52.4 63.3) scale(.6)"><tspan x="0" y="0">2</tspan></text>
+  <text class="st24" transform="translate(54.3 61.3)"><tspan x="0" y="0">]</tspan></text>
+  <text class="st24" transform="translate(16.6 87.4)"><tspan x="0" y="0">Respiration</tspan></text>
+  <text class="st24" transform="translate(23.1 8.6)"><tspan x="0" y="0">Locomotion</tspan></text>
+  <text class="st23" transform="translate(64.9 45.7)"><tspan x="0" y="0">Brain</tspan><tspan x="0" y="7.4">pO</tspan></text>
+  <text class="st23" transform="translate(73.1 55.1) scale(.6)"><tspan x="0" y="0">2</tspan></text>
+  <text class="st25" transform="translate(101.3 70.4)"><tspan x="0" y="0">Controllers</tspan></text>
+  <text class="st19" transform="translate(103.4 35.2)"><tspan x="0" y="0">Sensors</tspan></text>
+</svg>
