@@ -1,5 +1,8 @@
 # Keep entries in reverse chronological order (newest first).
 items:
+  - date: 2026-04-14
+    title: "[Preprint] 4-minute read of our preprint on predictive oxygen regulation"
+    url: https://gist.science/paper/bio/10.64898/2026.04.10.717666
   - date: 2026-03-15
     title: "[Cosyne 2026] Xueying Yang reveals that infection-induced sickness isn't just feeling tired—it’s a global brain reconfiguration."
     links:
