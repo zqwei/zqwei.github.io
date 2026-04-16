@@ -27,5 +27,5 @@ panels:
     include:
       - preprint-predictive-oxygen-regulation
       - cosyne-2026-global-brain-reconfiguration
-      - matlab-community-toolbox-training-projects
+      - faces-of-cell
     url: /news.html
